@@ -6,7 +6,7 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "High quality art. Captive storytelling. On-chain comics."
+          "High quality art. Captivating story. On-chain comics."
         ],
         autoStart: true,
         loop: true,

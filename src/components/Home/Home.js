@@ -19,7 +19,7 @@ function Home() {
                 <strong className="main-name"> PALL-O</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left", marginBottom:0}}>
+              <div style={{ padding: 50, textAlign: "left"}}>
                 <Type/>
               </div>
             </Col>
