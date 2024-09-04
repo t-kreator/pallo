@@ -225,11 +225,18 @@ button:focus {
 }
 
 .home-content {
-  padding: 9rem 0 20rem !important;
+  padding: 9rem 0 8rem !important;
   color: rgb(245, 245, 245);
   text-align: left;
 }
 
+@media (max-width: 1000px) {
+.home-content {
+  padding: 9rem 0 20rem !important;
+  color: rgb(245, 245, 245);
+  text-align: left;
+}
+}
 .heading {
   font-size: 2.4em !important;
   padding-left: 50px !important;
@@ -249,6 +256,7 @@ button:focus {
   font-size: 2.2em !important;
   color: #ffffff !important;
   font-weight: 600 !important;
+  position: absolute !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
@@ -258,14 +266,14 @@ button:focus {
 @media (max-width: 767px) {
   .Typewriter__wrapper {
     font-size: 1.4em !important;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
     position: absolute !important;
   }
 }
   @media (max-width: 1100px) {
     .Typewriter__wrapper {
       font-size: 2em !important;
-      font-weight: 500 !important;
+      font-weight: 600 !important;
       position: absolute !important;
     }
   }
