@@ -11,7 +11,7 @@ function Home() {
           <Row>
             <Col md={11} className="home-header">
               <h1 style={{ paddingBottom: 0 }} className="heading">
-                {" "}
+                {""}
               </h1>
 
               <h1 className="heading-name">
