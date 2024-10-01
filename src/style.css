@@ -285,8 +285,8 @@ button:focus {
 
 .myAvtar {
   justify-content: center !important;
-  padding-top: 10em !important;
-  padding-right: 5em !important;
+  padding-top: 4em !important;
+  padding-right: 0em !important;
 }
 
 @media (max-width: 767px) {

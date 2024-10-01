@@ -1,4 +1,5 @@
 import React from "react";
+import myImg from "../../Assets/hailuodonauto.webp";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   AiOutlineTwitter,
@@ -29,32 +30,16 @@ function Home2() {
               </i>
               The creators of Pall-O are two Finnish<b className="purple"> millennials</b>, trapped in economic chaos and constantly feeling like outsiders in life.
               This is not your average fictional adventure; it mirrors the challenges of <b className="purple"> real life</b>.
-              <br />
-              <br />
-               &nbsp;
               <i>
                 <b className="purple"></b>{" "}
                 <b className="purple">
                 
                 </b>
               </i>
-              <br />
-              <br />
-              <b className="purple"></b> 
-              <i>
-                <b className="purple">
-                  {" "}
-                  
-                </b>
-              </i>
-              &nbsp;
-              <i>
-                <b className="purple"> </b>
-              </i>
             </p>
           </Col>
           <Col md={4} className="myAvtar" style={{display:"flex",flexDirection:"row"}}>
-              {/*<img src={myImg} className="img-fluid" alt="avatar" />*/}
+              <img src={myImg} className="img-fluid" alt="avatar" style={{paddingBottom:0, width:"300px"}}/>
           </Col>
         </Row>
         <Row>
