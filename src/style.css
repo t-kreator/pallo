@@ -284,15 +284,19 @@ button:focus {
 
 
 .myAvtar {
+  display: flex;
+  flex-direction: row;
   justify-content: center !important;
   padding-top: 4em !important;
-  padding-right: 0em !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   .myAvtar {
+    flex-direction: column !important;
+    justify-content: center !important;
     padding-top: 2em !important;
     padding-bottom: 2em !important;
+    vertical-align: middle !important;
   }
 }
 

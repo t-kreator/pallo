@@ -1,4 +1,5 @@
 import React from "react";
+import Tilt from "react-parallax-tilt";
 import myImg from "../../Assets/hailuodonauto.webp";
 import { Container, Row, Col } from "react-bootstrap";
 import {
@@ -38,8 +39,10 @@ function Home2() {
               </i>
             </p>
           </Col>
-          <Col md={4} className="myAvtar" style={{display:"flex",flexDirection:"row"}}>
-              <img src={myImg} className="img-fluid" alt="avatar" style={{paddingBottom:0, width:"300px"}}/>
+          <Col md={4} className="myAvtar">
+          <Tilt>
+              <img src={myImg} className="img-fluid" alt="avatar" style={{paddingBottom:0}}/>
+              </Tilt>
           </Col>
         </Row>
         <Row>
