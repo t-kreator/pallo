@@ -11,7 +11,7 @@ function Projects() {
       <Container>
       <img src={pallocomics} className="img-fluid" alt="avatar" />
         <h1 className="project-heading">
-          Finland's first <strong className="purple">on-chain</strong> comic series.
+          Finland's first <strong className="purple">onchain</strong> comic series.
         </h1>
         <p style={{ color: "white"}}>
         Experimental sci-fi adventure about life inside computers.

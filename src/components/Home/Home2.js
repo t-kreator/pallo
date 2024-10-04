@@ -19,24 +19,21 @@ function Home2() {
               WHAT ARE WE ABOUT
             </h1>
             <p className="home-about-body">
-            Futuristic, but at the same time nostalgic. 
-            We are driven by <b className="purple"> authenticity</b>, and everything for Pall-O is <b className="purple">hand-drawn</b>.
-            The style draws inspiration from computer science.
-            It implements hints of Nordic culture featuring roughly beautiful landscapes, sauna scenes, and dark jokes.
-            This creates<b className="purple"> an exotic</b> sci-fi world never seen before.
+            Pall-O is a <b className="purple">sci-fi</b> world and an adventure never seen before.
+            The futuristic yet nostalgic story draws inspiration from
+            <b className="purple"> retro games</b> and <b className="purple">computer graphics</b>, 
+            combining them with hints of <b className="purple">Nordic culture</b>. 
               <br />
               <br />
-              <i>
-                
-              </i>
-              The creators of Pall-O are two Finnish<b className="purple"> millennials</b>, trapped in economic chaos and constantly feeling like outsiders in life.
-              This is not your average fictional adventure; it mirrors the challenges of <b className="purple"> real life</b>.
-              <i>
-                <b className="purple"></b>{" "}
-                <b className="purple">
-                
-                </b>
-              </i>
+              The creators of Pall-O are two Finnish <b className="purple">millennials</b>, 
+              trapped in economic chaos and constantly
+               feeling like <b className="purple">outsiders</b> in life. 
+               This is not your average fictional adventure; 
+               it mirrors the challenges of <b className="purple">real life</b>.
+               <br />
+               <br />
+              Pall-O adventure is being published as 
+              an on-going <b className="purple">comic</b> on the dReader app. Jump in, but remember to put your duck float on.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
