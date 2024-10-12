@@ -11,7 +11,7 @@ function Projects() {
       <Container>
       <img src={pallocomics} className="img-fluid" alt="avatar" />
         <h1 className="project-heading">
-          Finland's first <strong className="purple">onchain</strong> comic series.
+          Finland's first <strong className="purple">on-chain</strong> comic series.
         </h1>
         <p style={{ color: "white"}}>
         Experimental sci-fi adventure about life inside computers.
@@ -23,10 +23,9 @@ function Projects() {
               isBlog={false}
               title="Issue 1 - Activation"
               description="Unappreciated node gardener tries to prove he is not completely garbage. Same time AI programs find new innovative ways to make Pall-O network more efficient."
-              demoLink="https://dreader.app/comic/pall-o"
+              demoLink="https://www.dreader.app/comic-issue/116/read"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bindeep}
@@ -36,8 +35,7 @@ function Projects() {
               <br />
               <br />
             </>}
-              
-              demoLink="https://dreader.app/comic/pall-o"
+              demoLink="https://www.dreader.app/comic-issue/132/read"
             />
           </Col>
         </Row>
