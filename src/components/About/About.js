@@ -8,8 +8,21 @@ import tk from "../../Assets/tk.webp";
 
 function About() {
   return (
-    <Container fluid className="about-section">
-      <Container>
+    <Container>
+      <Container className="quote-card-view" style={{marginTop:"100px"}}>
+       <Col md={7} className="quote-card-view"
+                   style={{
+                    padding: "26px",
+                  }}>
+            <h1 style={{ fontSize: "2.6em" }}>
+            <strong className="purple">CREATORS</strong>
+            </h1>
+            <blockquote className="blockquote mb-0">
+      <p style={{paddingBottom:"50px", paddingTop:"20px", textAlign: "justify",fontSize: "0.9em" }}>
+      We are a two-person comic studio located in Oulu, Finland. 
+      </p>
+      </blockquote>
+      </Col>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
             md={7}
@@ -65,7 +78,7 @@ function About() {
           </Col>
         </Row>
       </Container>
-    </Container>
+      </Container>
   );
 }
 

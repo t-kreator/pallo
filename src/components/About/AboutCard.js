@@ -11,13 +11,10 @@ function AboutCard() {
           is a professional fine artist who creates the art and visual image for Pall-O.
             <br />
             <br />
-            Located in <span className="purple"> Oulu, Finland</span>, 
-            she has a long background as an artist and art director in the gaming industry and comics. 
-            She is an experienced inker and painter, whose style is suprising, memorable, and sentimentally raw. 
-            <br />
-            <br />
-            Threat Kreator roams around abandoned places, spooks anyone accidentally passing by, and
-            leaves behind her a dark veil of beautiful art. 
+            She has a background as an artist and art director in the gaming industry, and
+            is also an experienced inker and painter.
+            Her approach to comics follows the style of animation or a game, 
+            while also blending in a sense of traditional art.
           </p>
         </blockquote>
       </Card.Body>
