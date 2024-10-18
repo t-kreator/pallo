@@ -52,7 +52,7 @@ function About() {
             Pyromon
             </h1>
             <p style={{ color: "rgb(155 126 172)" }}>
-            Creating a lasting cultural legacy in the middle of a forest.
+           In the middle of a forest, creating a lasting cultural legacy.
           </p>
             <AboutPyromon/>
           </Col>

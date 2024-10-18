@@ -23,7 +23,7 @@ function Projects() {
               isBlog={false}
               title="Issue 1 - Activation"
               description="Unappreciated node gardener tries to prove he is not completely garbage. Same time AI programs find new innovative ways to make Pall-O network more efficient."
-              demoLink="https://www.dreader.app/comic-issue/116/read"
+              demoLink="https://www.dreader.app/comic-issue/116/"
             />
           </Col>
           <Col md={4} className="project-card">
@@ -35,7 +35,7 @@ function Projects() {
               <br />
               <br />
             </>}
-              demoLink="https://www.dreader.app/comic-issue/132/read"
+              demoLink="https://www.dreader.app/comic-issue/132/"
             />
           </Col>
         </Row>
