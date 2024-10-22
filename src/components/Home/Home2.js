@@ -1,6 +1,7 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
 import myImg from "../../Assets/hailuodonauto.webp";
+import festival from "../../Assets/festival.jpeg";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   AiOutlineTwitter,
@@ -12,9 +13,9 @@ import {
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
-      <Container>
+      <Container className="quote-card-view">
         <Row>
-          <Col md={8} className="home-about-description">
+          <Col md={8} fluid className="home-about-section">
             <h1 style={{ fontSize: "2.6em" }}>
               WHAT ARE WE ABOUT
             </h1>
@@ -36,14 +37,30 @@ function Home2() {
               an on-going <b className="purple">comic</b> on the dReader app. Jump in, but remember to put your duck float on.
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
-          <Tilt>
+          <Col md={4} style={{ marginTop:"40px" }} className="about-img">
               <img src={myImg} className="img-fluid" alt="avatar" style={{paddingBottom:0, width:"300px"}}/>
-              </Tilt>
           </Col>
         </Row>
+
+        <Row style={{marginTop:"100px"}}>
+          <Col md={8} fluid className="home-about-section">
+            <h1 style={{ fontSize: "2.6em" }}>
+              EVENTS
+            </h1>
+            <p className="home-about-body"  style={{textAlign:"center"}}>
+            15th-17th of November 2024 -  Oulu Comic Festival
+              <br />
+              <br />
+              </p>
+          </Col>
+          <Col 
+          md={4} style={{ marginTop:"0px" }} className="about-img">
+          <img src={festival} alt="about" className="img-fluid"  style={{paddingBottom:0, width:"300px"}}/>
+          </Col>
+        </Row>
+
         <Row>
-          <Col md={12} className="home-about-social">
+          <Col md={12} className="home-about-social" style={{ marginTop:"100px" }} >
             <h1>FIND US ON</h1>
             <ul className="home-about-social-links">
               <li className="social-icons">
