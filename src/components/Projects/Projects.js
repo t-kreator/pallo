@@ -14,7 +14,7 @@ function Projects() {
           Finland's first <strong className="purple">on-chain</strong> comic series.
         </h1>
         <p style={{ color: "white"}}>
-        Experimental sci-fi adventure about life inside computers.
+        Experimental sci-fi adventure about life inside computers. O'Pall!
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
