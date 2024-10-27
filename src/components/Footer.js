@@ -21,7 +21,7 @@ function Footer() {
 
             <li className="social-icons">
               <a
-                href="https://x.com/digipallo"
+                href="https://x.com/pallocomics"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
