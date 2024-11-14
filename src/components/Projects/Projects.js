@@ -20,7 +20,7 @@ function Projects() {
         </p>
         <Button variant="primary" href={"https://www.dreader.app/mint/pall-o_bin-deep"} target="_blank">
         <img src={dreader} className="dreader" alt="dreader" /> &nbsp;
-          {"Buy Issue 2"}
+          {"Buy the comics"}
         </Button>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
