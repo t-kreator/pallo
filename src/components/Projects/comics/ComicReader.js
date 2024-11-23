@@ -174,7 +174,7 @@ const ComicReader = ({ pages }) => {
           }}
         />
 
-{/* Swipe Animation (Arrow) */}
+{/* Swipe Animation (Arrow) 
 {isFullScreen && (
           <div
             className="swipe-animation"
@@ -186,14 +186,12 @@ const ComicReader = ({ pages }) => {
               color: "#fff",
               fontSize: "30px",
               zIndex: 10,
-              animation: "swipeAnimation 1.5s infinite",
             }}
           >
-            &#8594; {/* Right arrow indicating swipe */}
+            &#8594; {/* Right arrow indicating swipe 
             <div style={{ fontSize: "18px" }}>Swipe to turn pages</div>
           </div>
-        )}
-
+        )}*/}
         <div className="preview-tooltip">Preview Only</div>
       </div>
 

@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Home2 from "./Home2";
-import Type from "./Type";
 
 function Home() {
   return (
@@ -10,18 +9,15 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={8} className="home-header">
-              <h1 style={{ paddingBottom: 0 }} className="heading">
-                {""}
-              </h1>
-
               <h1 className="heading-name">
-                What is
+                Welcome to
                 <strong className="main-name"> PALL-O</strong>
               </h1>
-
-              <div style={{ padding: 50, textAlign: "left"}}>
-                <Type/>
-              </div>
+              <p className="flavor-text">
+              This is where your next-level adventure kicks off into a whole new reality. 
+              <br/>
+              Buckle up—it’s about to get glitchy!
+              </p>
             </Col>
           </Row>
         </Container>

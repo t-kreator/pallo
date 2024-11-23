@@ -1,5 +1,5 @@
 import React from "react";
-import myImg from "../../Assets/hailuodonauto.webp";
+import Button from "react-bootstrap/Button";
 import festival from "../../Assets/festival.jpeg";
 import gulp from "../../Assets/Gulprageolutta_optimized.gif";
 import moon from "../../Assets/pallotothemoon_mini_resize.gif";
@@ -16,33 +16,17 @@ function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container className="quote-card-view">
-        <Row>
-          <Col md={8} fluid className="home-about-section">
-            <h1 style={{ fontSize: "1.7em", textAlign:"left" }}>
-              WHAT ARE WE BUILDING
-            </h1>
-            <p className="home-about-body">
-            Pall-O is a <b className="purple">sci-fi</b> world and an adventure never seen before.
-            The futuristic yet nostalgic story draws inspiration from
-            <b className="purple"> retro games</b> and <b className="purple">computer graphics</b>, 
-            combining them with hints of <b className="purple">Nordic culture</b>. 
-              <br />
-              <br />
-              The creators of Pall-O are two Finnish <b className="purple">millennials</b>, 
-              trapped in economic chaos and constantly
-               feeling like <b className="purple">outsiders</b> in life. 
-               This is not your average fictional adventure; 
-               it mirrors the challenges of <b className="purple">real life</b>.
-               <br />
-               <br />
-              Pall-O adventure is being published as 
-              an on-going <b className="purple">comic</b> on the dReader app. Jump in, but remember to put your duck float on.
-            </p>
-          </Col>
-          <Col md={4} style={{ marginTop:"30px" }} >
-              <img src={myImg} className="myAvtar" alt="avatar" style={{paddingBottom:"20px", width:"250px", loading:"eager"}}/>
-          </Col>
-        </Row>
+      <div class="image-container">
+      <div class="content">
+  <h1>Comics</h1>
+  <p>Pall-O is a groundbreaking sci-fi comic blending retro gaming vibes, 
+    unique characters, and an unforgettable adventure—now live on dReader app.
+    </p>
+    <Button variant="primary" href={"https://pall-o.com/comics"} style={{marginTop:"10px"}}>
+    Jump in!
+  </Button>
+</div>
+</div>
         <Row className="features-section">
   <Col md={4} className="feature-item">
     <img
@@ -88,7 +72,18 @@ function Home2() {
     </p>
   </Col>
 </Row>
-          
+<div class="image-container2">
+      <div class="content">
+  <h1>About</h1>
+  <p>
+  The creators of Pall-O are two Finnish millennials, 
+  trapped in economic chaos and constantly feeling like outsiders in life.
+    </p>
+    <Button variant="primary" href={"https://pall-o.com/about"} style={{marginTop:"10px"}}>
+    Read more
+  </Button>
+</div>
+</div>
         <Row style={{marginTop:"30px"}}>
           <Col md={8} fluid className="home-about-section">
             <h1 style={{ fontSize: "1.7em", textAlign:"left" }}>
