@@ -53,8 +53,6 @@ function Projects() {
               pages="57"
               year="2024"
               description={<>{"To escape, Plop has to find a way through Trash Bin node. Unfortunately, The Bin is a home for all kinds of creepwares."}
-              <br />
-              <br />
             </>}
               demoLink="https://www.dreader.app/comic-issue/132/"
               pageimages = {[ 

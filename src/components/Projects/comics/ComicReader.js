@@ -136,20 +136,64 @@ const ComicReader = ({ pages }) => {
             Page {currentPage} of {pages.length}
           </div>
         )}
+        
+        {/* Fullscreen Exit Button */}
+        {isFullScreen && (
+          <button
+            onClick={toggleFullScreen}
+            style={{
+              position: "absolute",
+              top: "10px",
+              right: "10px",
+              fontSize: "24px",
+              color: "#fff",
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+              zIndex: 10,
+            }}
+          >
+            X
+          </button>
+        )}
+
         {/* Display the current page */}
         <img
           src={pages[currentPage - 1]}
           alt={`Comic Page ${currentPage}`}
           onClick={toggleFullScreen}
-          style={{    cursor: "pointer",
+          style={{
+            cursor: "pointer",
             width: "auto",               // Maintain the original aspect ratio
             height: "auto",              // Adjust dynamically
             maxWidth: "100%",             // Limit the image width to 90% of the screen
-            maxHeight: "90vh",           // Ensure the image doesn't exceed 80% of viewport height
+            maxHeight: "100vh",           // Ensure the image doesn't exceed 80% of viewport height
             margin: "0 auto",            // Center the image
             display: "block",            // Ensure it's treated as a block element
-            objectFit: "contain",  }}
+            objectFit: "contain",
+          }}
         />
+
+{/* Swipe Animation (Arrow) */}
+{isFullScreen && (
+          <div
+            className="swipe-animation"
+            style={{
+              position: "fixed",
+              top: "30px",
+              left: "50%",
+              transform: "translateX(-50%)",
+              color: "#fff",
+              fontSize: "30px",
+              zIndex: 10,
+              animation: "swipeAnimation 1.5s infinite",
+            }}
+          >
+            &#8594; {/* Right arrow indicating swipe */}
+            <div style={{ fontSize: "18px" }}>Swipe to turn pages</div>
+          </div>
+        )}
+
         <div className="preview-tooltip">Preview Only</div>
       </div>
 

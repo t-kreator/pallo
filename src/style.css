@@ -792,3 +792,15 @@ span {
   margin: 10px 20px; /* Padding around paragraphs */
   line-height: 1.5;
 }
+
+@keyframes swipeAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+ 
+  }
+}

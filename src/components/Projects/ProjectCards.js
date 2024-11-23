@@ -62,13 +62,13 @@ function ProjectCards(props) {
             className="img-fluid mb-3" 
             style={{ borderRadius: "8px", maxWidth: "100%", loading:"lazy" }} 
           />
-          <div style={{ maxWidth: "600px", margin: "auto" }}>
-            <p><strong>Description:</strong> {props.description}</p>
-            <p><strong>Pages:</strong> {props.pages}</p>
-            <p><strong>Year:</strong> {props.year}</p>
-          </div>
-          <br/>
-          <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+<div style={{ maxWidth: "600px", margin: "auto" }}>
+  <p style={{ margin: "5px 0 2px 0" }}><strong>Description:</strong> {props.description}</p>
+  <p style={{ margin: "10px 0 2px 0" }}><strong>Pages:</strong> {props.pages}</p>
+  <p style={{ margin: "5px 0" }}><strong>Year:</strong> {props.year}</p>
+</div>
+
+          <div style={{ display: "flex", justifyContent: "center", width: "100%", marginBottom:"30px", marginTop:"30px" }}>
           <Button variant="primary" href={props.demoLink} target="_blank">
     <img src={dreader} className="dreader" alt="dreader" /> &nbsp;
     Read on dReader
