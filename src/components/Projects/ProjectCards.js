@@ -68,14 +68,14 @@ function ProjectCards(props) {
             <p><strong>Year:</strong> {props.year}</p>
           </div>
           <br/>
-          <ComicReader pages={props.pageimages}/>
-        </Modal.Body>
-        <Modal.Footer style={{ display: "flex", justifyContent: "center", width: "100%" }}>
-  <Button variant="primary" href={props.demoLink} target="_blank">
+          <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+          <Button variant="primary" href={props.demoLink} target="_blank">
     <img src={dreader} className="dreader" alt="dreader" /> &nbsp;
     Read on dReader
   </Button>
-</Modal.Footer>
+  </div>
+          <ComicReader pages={props.pageimages}/>
+        </Modal.Body>
       </Modal>
     </>
   );

@@ -9,22 +9,24 @@ import tk from "../../Assets/tk.webp";
 function About() {
   return (
     <Container>
-      <Container className="quote-card-view" style={{marginTop:"100px"}}>
+      <Container className="quote-card-view" style={{marginTop:"80px"}}>
        <Col md={7} className="quote-card-view"
                    style={{
                     padding: "26px",
                   }}>
-            <h1 style={{ fontSize: "2.6em" }}>
+            <h1 style={{ fontSize: "1.7em" }}>
             <strong className="purple">CREATORS</strong>
             </h1>
             <blockquote className="blockquote mb-0">
-      <p style={{paddingTop:"20px", textAlign: "justify",fontSize: "0.9em" }}>
+      <p style={{paddingTop:"20px", textAlign: "justify",fontSize: "0.8em" }}>
       We’re a bold two-person indie studio and pioneers in the comic industry. We’ve created Finland’s first on-chain comic series!
 Our focus is clear: to bring high-quality comics to an international audience and redefine the comic industry for the modern era.
       </p>
-      <p style={{paddingBottom:"50px", paddingTop:"20px", textAlign: "justify",fontSize: "0.9em" }}>
+      <p style={{paddingBottom:"0px", paddingTop:"0px", textAlign: "justify",fontSize: "0.8em" }}>
       As an experimental team with strong technological backgrounds in the game industry, we push boundaries, 
       explore new possibilities, and create stories the world has never seen before.
+</p>
+<p style={{paddingBottom:"20px", paddingTop:"0px", textAlign: "justify",fontSize: "0.8em" }}>
 Based in Oulu, Finland, we’re ready to make our mark.
 </p>
       </blockquote>
@@ -35,10 +37,10 @@ Based in Oulu, Finland, we’re ready to make our mark.
             style={{
               justifyContent: "center",
               paddingTop: "0px",
-              paddingBottom: "50px",
+              paddingBottom: "10px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "0px" }}>
+            <h1 style={{ fontSize: "1.5em", paddingBottom: "0px" }}>
             Threat Kreator
             </h1>
             <p style={{ color: "rgb(155 126 172)" }}>
@@ -51,10 +53,10 @@ Based in Oulu, Finland, we’re ready to make our mark.
           </Col>
           <Col
             md={5}
-            style={{ paddingTop: "10px", paddingBottom: "100px" }}
+            style={{ paddingTop: "20px", paddingBottom: "20px" }}
             className="about-img"
           >
-            <img src={tk} alt="about" className="img-fluid" />
+            <img src={tk} alt="about" className="img-fluid" style={{width:"150px"}} />
           </Col>
         </Row>
 
@@ -67,7 +69,7 @@ Based in Oulu, Finland, we’re ready to make our mark.
               paddingBottom: "0px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "0px" }}>
+            <h1 style={{ fontSize: "1.5em", paddingBottom: "0px" }}>
             Pyromon
             </h1>
             <p style={{ color: "rgb(155 126 172)" }}>
@@ -80,7 +82,7 @@ Based in Oulu, Finland, we’re ready to make our mark.
             style={{ paddingTop: "10px", paddingBottom: "10px" }}
             className="about-img"
           >
-            <img src={pyromon} alt="about" className="img-fluid" />
+            <img src={pyromon} alt="about" className="img-fluid"  style={{width:"150px"}}/>
           </Col>
         </Row>
       </Container>

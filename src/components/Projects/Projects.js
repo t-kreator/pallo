@@ -10,16 +10,16 @@ function Projects() {
   return (
     <Container fluid className="project-section">
       <Container>
-      <img src={pallocomics} className="img-fluid" alt="avatar" />
+      <img src={pallocomics} className="img-fluid" alt="avatar" style={{borderRadius:"none"}} />
         <h1 className="project-heading">
           Finland's first <strong className="purple">on-chain</strong> comic series.
         </h1>
         <br/>
-        <p style={{ maxWidth: "600px", margin: "auto", color: "white" }}>
+        <p style={{ maxWidth: "600px", margin: "auto", color: "white", fontSize:"0.95em" }}>
         Experimental sci-fi adventure about life inside computers. O'Pall!
         </p>
         <br/>
-        <p style={{ maxWidth: "600px", margin: "auto", color: "white" }}>
+        <p style={{ maxWidth: "600px", margin: "auto", color: "white", fontSize:"0.8em" }}>
         Thanks to blockchain technology, digital comics can now be treated almost like physical ones. 
         When you purchase our comic, you gain the freedom to choose: will you unwrap it, resell it, 
         or request our signature? Finally, digital comics are truly collectible.

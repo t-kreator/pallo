@@ -1,9 +1,5 @@
-html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-    #11101094,
-    rgba(12, 8, 24, 0.904)
-  );
+html,body {
+background-color: rgb(12, 12, 13);
 
   --image-gradient: linear-gradient(
     to bottom left,
@@ -12,6 +8,7 @@ html {
   );
 
   --imp-text-color: #fe9f39;
+
 }
 
 .purple {
@@ -211,23 +208,26 @@ button:focus {
 
 
 .home-header {
-  padding-top: 80px !important;
-}
-
-.home-section {
-  position: relative;
-  z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/SeriesBanner.webp);
-  background-position: top center;
-  background-repeat: no-repeat;
-  padding-bottom: 100px !important;
   padding-top: 0px !important;
 }
 
+.home-section {
+  position: justify;
+  z-index: 1;
+  background-image: var(--image-gradient), url(./Assets/SeriesBanner.webp);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    /* Crop the image by limiting the section height */
+    height: 400px; /* Adjust this value to control the cropping */
+    overflow: hidden; /* Ensures the excess part of the image is hidden */
+}
+
 .home-content {
-  padding: 9rem 0 15rem !important;
+  padding: 5rem 0 5rem !important;
   color: rgb(245, 245, 245);
   text-align: left;
+  z-index: 2;
 }
 
 @media (max-width: 1000px) {
@@ -238,12 +238,12 @@ button:focus {
 }
 }
 .heading {
-  font-size: 2.4em !important;
+  font-size: 2em !important;
   padding-left: 50px !important;
 }
 
 .heading-name {
-  font-size: 2.5em !important;
+  font-size: 2.3em !important;
   padding-left: 45px !important;
 }
 
@@ -253,27 +253,27 @@ button:focus {
 }
 
 .Typewriter__wrapper {
-  font-size: 2.2em !important;
+  font-size: 1.6em !important;
   color: #ffffff !important;
   font-weight: 600 !important;
   position: absolute !important;
   margin-right: 20px;
 }
 .Typewriter__cursor {
-  font-size: 2.4em !important;
+  font-size: 1.6em !important;
   color: #ffb700 !important;
 }
 
 @media (max-width: 767px) {
   .Typewriter__wrapper {
-    font-size: 1.4em !important;
+    font-size: 1em !important;
     font-weight: 500 !important;
     position: absolute !important;
   }
 }
   @media (max-width: 1100px) {
     .Typewriter__wrapper {
-      font-size: 2em !important;
+      font-size: 1.2em !important;
       font-weight: 600 !important;
       position: absolute !important;
     }
@@ -283,40 +283,35 @@ button:focus {
     display: none !important;
   }
 
-
 .myAvtar {
-  display: flex;
   flex-direction: row;
-  justify-content: center !important;
-  padding-top: 4em !important;
+  border-radius: 25px;
+  padding:0;
+  margin-bottom: 20px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 770px) {
   .myAvtar {
-    flex-direction: column !important;
-    justify-content: center !important;
-    padding-top: 2em !important;
-    padding-bottom: 2em !important;
-    vertical-align: middle !important;
+display: none;
   }
 }
 
 .home-about-section {
   position: relative;
-  padding-bottom: 0px !important;
-  padding-top: 50px !important;
+ margin-bottom: 50px;
+  padding-top: 20px !important;
 }
 
 .home-about-description {
   color: white !important;
   padding-top: 10px !important;
   padding-bottom: 0px !important;
-  text-align: center;
+  text-align: left;
 }
 
 .home-about-body {
-  padding-top: 50px;
-  font-size: 1.2em !important;
+  padding-top: 30px;
+  font-size: 1em !important;
   text-align: left;
 }
 
@@ -430,14 +425,14 @@ button:focus {
 /* --------- */
 .project-section {
   position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
+  padding-top: 100px !important;
+  padding-bottom: 20px !important;
   background-image: var(--section-background-color) !important;
 }
 
 .project-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
   padding-left: 25px !important;
   padding-right: 25px !important;
   height: auto !important;
@@ -517,7 +512,7 @@ button:focus {
 }
 .project-heading {
   color: white !important;
-  font-size: 2.3em !important;
+  font-size: 1.5em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
 
@@ -529,8 +524,6 @@ button:focus {
 
 .about-section {
   position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
 }
@@ -581,6 +574,7 @@ button:focus {
 @media (max-width: 767px) {
   .about-img {
     padding-top: 10 !important;
+    border-radius: 50px;
   }
 }
 .img-fluid{
@@ -589,6 +583,15 @@ button:focus {
   padding-top: 0px;
   padding-bottom: 15px;
   pointer-events: none;
+  border-radius: 25px;
+}
+.img-fluid.avatar{
+  width:250px;
+  height: auto;
+  padding-top: 0px;
+  padding-bottom: 15px;
+  pointer-events: none;
+  border-radius: 25px;
 }
 .dreader{
   width:25px;
@@ -614,6 +617,7 @@ button:focus {
   justify-content: center;
   align-items: center;
   position: relative;
+  transition: transform 0.3s ease-out;
 }
 
 .comic-container img {
@@ -753,4 +757,38 @@ span {
   max-height: 80vh;         /* Limit image height */
   margin: 0 auto;           /* Center the image */
   display: block;
+}
+
+.features-section {
+  text-align: center;
+}
+
+.feature-item {
+  margin-bottom: 50px; /* Space between rows in smaller screens */
+}
+
+.feature-image {
+  width: 100%; /* Ensures images scale properly */
+  max-width: 120px; /* Limits the image size */
+  height: auto;
+  border-radius: 15px; /* Rounds the image corners */
+  margin: 0 auto; /* Centers image */
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  box-shadow: 0 0 4px #ffb219, 0 0 7px #ffb2197d, 0 0 20px #ffb2195a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-title {
+  font-size: 1.2em;
+  margin-top: 15px;
+  color: #ffb219; /* Matches your theme color */
+}
+
+.feature-body {
+  font-size: 0.9em;
+  color: #ffffff; /* White text for readability */
+  margin: 10px 20px; /* Padding around paragraphs */
+  line-height: 1.5;
 }

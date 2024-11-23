@@ -2,25 +2,26 @@ import React, { useState, useRef, useEffect } from "react";
 import "../../../style.css";
 
 const ComicReader = ({ pages }) => {
-    const [currentPage, setCurrentPage] = useState(1);
-    const [isFullScreen, setIsFullScreen] = useState(false);
-    const comicContainerRef = useRef(null);
-    const touchStartX = useRef(0);
-    const touchEndX = useRef(0);
-    const touchStartY = useRef(0);
-    const touchEndY = useRef(0);
-  
-    const goToNextPage = () => {
-      if (currentPage < pages.length) {
-        setCurrentPage((prev) => prev + 1);
-      }
-    };
-  
-    const goToPreviousPage = () => {
-      if (currentPage > 1) {
-        setCurrentPage((prev) => prev - 1);
-      }
-    };
+  const [currentPage, setCurrentPage] = useState(1);
+  const [isFullScreen, setIsFullScreen] = useState(false);
+  const comicContainerRef = useRef(null);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
+  const touchStartY = useRef(0);
+  const touchEndY = useRef(0);
+
+  const goToNextPage = () => {
+    if (currentPage < pages.length) {
+      setCurrentPage((prev) => prev + 1);
+    }
+  };
+
+  const goToPreviousPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage((prev) => prev - 1);
+    }
+  };
+
   const toggleFullScreen = () => {
     const element = comicContainerRef.current;
     if (!isFullScreen) {
@@ -51,12 +52,20 @@ const ComicReader = ({ pages }) => {
   // Handle touch events
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
-    touchStartY.current = e.touches[0].clientY;  // Track starting Y-coordinate
+    touchStartY.current = e.touches[0].clientY; // Track starting Y-coordinate
   };
 
   const handleTouchMove = (e) => {
     touchEndX.current = e.touches[0].clientX;
-    touchEndY.current = e.touches[0].clientY;  // Track moving Y-coordinate
+    touchEndY.current = e.touches[0].clientY; // Track moving Y-coordinate
+
+    const swipeDistanceX = touchStartX.current - touchEndX.current;
+    const swipeDistanceY = touchStartY.current - touchEndY.current;
+
+    // Block horizontal swipes, but allow vertical scrolling
+    if (Math.abs(swipeDistanceX) > Math.abs(swipeDistanceY)) {
+      e.preventDefault(); // Prevent vertical scroll when horizontally swiping
+    }
   };
 
   const handleTouchEnd = () => {
@@ -65,10 +74,10 @@ const ComicReader = ({ pages }) => {
 
     // Only allow swipe if the horizontal movement is greater than the vertical movement
     if (Math.abs(swipeDistanceX) > Math.abs(swipeDistanceY)) {
-      if (swipeDistanceX > 50) {
+      if (swipeDistanceX > 30) {
         // Swipe left: Next page
         goToNextPage();
-      } else if (swipeDistanceX < -50) {
+      } else if (swipeDistanceX < -30) {
         // Swipe right: Previous page
         goToPreviousPage();
       }
@@ -104,7 +113,7 @@ const ComicReader = ({ pages }) => {
         onTouchEnd={handleTouchEnd}
         style={{
           overflow: isFullScreen ? "hidden" : "visible",
-          touchAction: "none", // Disable default browser gestures
+          touchAction: "auto", // Allow default scroll behavior
         }}
       >
         {/* Page Number Indicator */}
@@ -132,19 +141,34 @@ const ComicReader = ({ pages }) => {
           src={pages[currentPage - 1]}
           alt={`Comic Page ${currentPage}`}
           onClick={toggleFullScreen}
-          style={{ cursor: "pointer", width: "100%", maxHeight: "100vh", loading:"lazy" }}
+          style={{    cursor: "pointer",
+            width: "auto",               // Maintain the original aspect ratio
+            height: "auto",              // Adjust dynamically
+            maxWidth: "100%",             // Limit the image width to 90% of the screen
+            maxHeight: "90vh",           // Ensure the image doesn't exceed 80% of viewport height
+            margin: "0 auto",            // Center the image
+            display: "block",            // Ensure it's treated as a block element
+            objectFit: "contain",  }}
         />
-  <div className="preview-tooltip">Preview Only</div>
+        <div className="preview-tooltip">Preview Only</div>
       </div>
 
       <div className="navigation">
-        <button onClick={goToPreviousPage} disabled={currentPage === 1} style={{ fontSize: "30px", background: "none", border: "none", cursor: "pointer" }}>
+        <button
+          onClick={goToPreviousPage}
+          disabled={currentPage === 1}
+          style={{ fontSize: "30px", background: "none", border: "none", cursor: "pointer" }}
+        >
           &#8592;
         </button>
         <span>
           Page {currentPage} of {pages.length}
         </span>
-        <button onClick={goToNextPage} disabled={currentPage === pages.length} style={{ fontSize: "30px", background: "none", border: "none", cursor: "pointer" }}>
+        <button
+          onClick={goToNextPage}
+          disabled={currentPage === pages.length}
+          style={{ fontSize: "30px", background: "none", border: "none", cursor: "pointer" }}
+        >
           &#8594;
         </button>
       </div>
