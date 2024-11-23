@@ -1,5 +1,4 @@
 import React from "react";
-import Tilt from "react-parallax-tilt";
 import myImg from "../../Assets/hailuodonauto.webp";
 import festival from "../../Assets/festival.jpeg";
 import { Container, Row, Col } from "react-bootstrap";
@@ -38,7 +37,7 @@ function Home2() {
             </p>
           </Col>
           <Col md={4} style={{ marginTop:"40px" }} className="about-img">
-              <img src={myImg} className="img-fluid" alt="avatar" style={{paddingBottom:0, width:"300px"}}/>
+              <img src={myImg} className="img-fluid" alt="avatar" style={{paddingBottom:0, width:"300px", loading:"lazy"}}/>
           </Col>
         </Row>
 
@@ -55,7 +54,7 @@ function Home2() {
           </Col>
           <Col 
           md={4} style={{ marginTop:"0px" }} className="about-img">
-          <img src={festival} alt="about" className="img-fluid"  style={{paddingBottom:0, width:"300px"}}/>
+          <img src={festival} alt="about" className="img-fluid"  style={{paddingBottom:0, width:"300px", loading:"lazy"}}/>
           </Col>
         </Row>
 

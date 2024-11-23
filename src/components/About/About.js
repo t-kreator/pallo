@@ -18,9 +18,15 @@ function About() {
             <strong className="purple">CREATORS</strong>
             </h1>
             <blockquote className="blockquote mb-0">
-      <p style={{paddingBottom:"50px", paddingTop:"20px", textAlign: "justify",fontSize: "0.9em" }}>
-      We are a two-person comic studio located in Oulu, Finland. 
+      <p style={{paddingTop:"20px", textAlign: "justify",fontSize: "0.9em" }}>
+      We’re a bold two-person indie studio and pioneers in the comic industry. We’ve created Finland’s first on-chain comic series!
+Our focus is clear: to bring high-quality comics to an international audience and redefine the comic industry for the modern era.
       </p>
+      <p style={{paddingBottom:"50px", paddingTop:"20px", textAlign: "justify",fontSize: "0.9em" }}>
+      As an experimental team with strong technological backgrounds in the game industry, we push boundaries, 
+      explore new possibilities, and create stories the world has never seen before.
+Based in Oulu, Finland, we’re ready to make our mark.
+</p>
       </blockquote>
       </Col>
         <Row style={{ justifyContent: "center", padding: "10px" }}>

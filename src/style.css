@@ -1,7 +1,7 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.582),
+    #11101094,
     rgba(12, 8, 24, 0.904)
   );
 
@@ -386,7 +386,7 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(13, 13, 13);
+  background-color: rgb(6, 6, 11);
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -595,4 +595,162 @@ button:focus {
   height: auto;
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+/* comicreader
+/* ComicReader.css */
+.comic-reader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+.comic-container {
+  max-width: none; /* Remove any width constraints */
+  background-color: black; /* Optional: Add a background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.comic-container img {
+  max-width: 100%;
+  max-height: 100%; /* Ensure the image fits within the screen */
+  object-fit: contain;
+  display: block; /* Center-align the image */
+  margin: 0 auto; /* Center-align the image */
+  user-select: none; 
+  width: 100%;    
+  height: 100%;       
+
+}
+.preview-tooltip {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 1.2em;
+  z-index: 10;
+  display: none;
+}
+
+.comic-container:hover .preview-tooltip {
+  display: block;
+}
+
+.navigation {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgba(253, 166, 15, 0.959);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgba(253, 193, 90, 0.959);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+span {
+  font-size: 18px;
+}
+
+.hash-section {
+  position: center;
+  padding-bottom: 0px !important;
+  padding-top: 50px !important;
+}
+
+.hash-description {
+  color: rgba(255, 255, 255, 0.881) !important;
+  padding: 30px ;
+  padding-bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.hash-body {
+  padding-top: 50px;
+  font-size: 1.2em !important;
+  text-align: center;
+}
+
+.comic-map-title {
+  font-size: 2.6em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: left;
+  line-height: 1.2;
+  font-weight: bold;
+}
+.map {
+  width: 100%;
+  max-width: 100%; /* Ensure it does not overflow */
+  height: auto;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .comic-map-title {
+    font-size: 1.8em;
+  }
+
+  .home-about-body {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 576px) {
+  .comic-map-title {
+    font-size: 1.6em;
+  }
+
+  .home-about-body {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation button i {
+    font-size: 24px; /* Smaller arrow size on mobile */
+  }
+}
+
+.dark-modal .modal-content {
+  background-color: #0c0c0c; /* Dark background */
+  color: #ffffff;           /* White text */
+  border-radius: 10px;      /* Rounded corners */
+  border: none;             /* Remove border */
+}
+
+.dark-modal .modal-header, 
+.dark-modal .modal-footer {
+  background-color: #010101; /* Even darker background for header/footer */
+  border: none;              /* Remove borders */
+}
+
+.dark-modal .modal-body img {
+  max-height: 80vh;         /* Limit image height */
+  margin: 0 auto;           /* Center the image */
+  display: block;
 }
