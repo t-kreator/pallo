@@ -19,7 +19,7 @@ function Projects() {
         Experimental sci-fi adventure about life inside computers. O'Pall!
         </p>
         <br/>
-        <p style={{ maxWidth: "600px", margin: "auto", color: "white", fontSize:"0.8em" }}>
+        <p style={{ maxWidth: "600px", margin: "auto", color: "white", fontSize:"0.88em" }}>
         Thanks to blockchain technology, digital comics can now be treated almost like physical ones. 
         When you purchase our comic, you gain the freedom to choose: will you unwrap it, resell it, 
         or request our signature? Finally, digital comics are truly collectible.
@@ -36,11 +36,11 @@ function Projects() {
               year="2024"
               demoLink="https://www.dreader.app/comic-issue/116/"
               pageimages = {[ 
-                "/pages/Activation/1.jpg",
-                "/pages/Activation/2.jpg",
-                "/pages/Activation/3.jpg",
-                "/pages/Activation/4.jpg",
-                "/pages/Activation/5.jpg",
+                "/pages/Activation/1.webp",
+                "/pages/Activation/2.webp",
+                "/pages/Activation/3.webp",
+                "/pages/Activation/4.webp",
+                "/pages/Activation/5.webp",
               ]}
             />
           </Col>
@@ -58,11 +58,11 @@ function Projects() {
             </>}
               demoLink="https://www.dreader.app/comic-issue/132/"
               pageimages = {[ 
-                "/pages/BinDeep/1.jpg",
-                "/pages/BinDeep/2.jpg",
-                "/pages/BinDeep/3.jpg",
-                "/pages/BinDeep/4.jpg",
-                "/pages/BinDeep/5.jpg",
+                "/pages/BinDeep/1.webp",
+                "/pages/BinDeep/2.webp",
+                "/pages/BinDeep/3.webp",
+                "/pages/BinDeep/4.webp",
+                "/pages/BinDeep/5.webp",
               ]}
             />
           </Col>
