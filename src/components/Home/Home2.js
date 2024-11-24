@@ -4,9 +4,29 @@ import festival from "../../Assets/festival.jpeg";
 import gulp from "../../Assets/Gulprageolutta_optimized.gif";
 import moon from "../../Assets/pallotothemoon_mini_resize.gif";
 import best from "../../Assets/thebest_mini_resize.gif";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Accordion } from "react-bootstrap";
 
 function Home2() {
+
+ // Define the FAQs
+ const faqs = [
+  { question: "What is Pall-O about?", answer: "Pall-O is a sci-fi world and an adventure never seen before. The futuristic yet nostalgic story draws inspiration from retro games and computer graphics, combining them with hints of Nordic culture. We create high-quality comics for everyone who loves millennium internet humour and questions their absurd existence. " },
+  { question: "Where can I read Pall-O comics?", answer: "Pall-O comics are available now on dReader app! dReader is a digital platform where comics like Pall-O are available as digital collectibles." },
+  { question: "What is an on-chain comic?", answer: "An on-chain comic is a digital comic book that is stored on a blockchain. Pall-O comics are stored in Solana blockchain. Each issue can be represented as a non-fungible token (NFT), which gives the buyer ownership of their copy. With decentralized storage and blockchain records, the comic cannot be censored, modified, or taken offline by a single entity, offering resilience and permanence. Blockchain technology makes digital comics finally collectible, so it’s possible to treat digital comics almost same way than physical comics!" },
+  { question: "What can I do with my comic copy? ", answer: "We hope you read it over and over again, and enjoy all the tiniest details and easter eggs we have hidden for you. When you buy our comic, you have also a possibility to decide if you unwrap it, resell it or ask for our signature. However, the buyers don’t have the copyrights or rights for the IP. It is prohibited to commercialize any content without the written permission of Pall-O studio. The intellectual property rights linked to the comics are retained by Pall-O studio, including those used in the creation of each comic issue. Any and all other commercially-linked activity in which an owner uses their comic is prohibited, unless otherwise stated by agreement with our studio." },
+  { question: "Are the Pall-O comics going to be a physical book? ", answer: "First, we’ll publish issues 1-8 digitally. Over time, we will create a physical book of Pall-O comics. The book will have issues 1-8 combined! The physical book might differ from original comics, depending of the edits and publisher - This means that the digital comics have all the original, non-censored content!" },
+  { question: "How can I support Pall-O?", answer: "You can support Pall-O by reading the comics on dReader and sharing them with others." },
+  { question: "What happens if I lose my wallet and comic? ", answer: "Please take good care of your wallet and your comic. Remember to have backup keys to your wallet and always check the wallet address is correct when sending it.  Pall-O studio is not responsible if you lose your comic. " },
+  { question: "Where can I see the trailer? ",   answer: (
+    <>
+      Please check it here! <a style={{color: "#ffa600",
+    textDecoration: "none" }} href="https://youtu.be/6tRs48gKywc?feature=shared" target="_blank" rel="noopener noreferrer">Watch the trailer</a>
+    </>
+  ) },
+  { question: "Why is Duckota angry?", answer: "If you were born as a vehicle, but hated that - and instead of having any purpose for your life, you would end up in Trash Bin node - do you think, you might also be a bit angry? " },
+  { question: "Why is Plop so huge?", answer: "What do you mean, he’s only 17,3 GB? No, he truly is huge! He has a very powerful skill, but he’s also full of bugs." }
+];
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container className="quote-card-view">
@@ -92,6 +112,45 @@ function Home2() {
           <img src={festival} alt="about" className="img-fluid"  style={{width:"250px", padding:0, loading:"lazy"}}/>
           </Col>
         </Row>
+        <div className="faq-container" style={{ marginTop: "50px", padding: "20px", backgroundColor: "none", borderRadius: "5px" }}>
+  <h1 style={{ fontSize: "1.7em", textAlign: "center", marginBottom: "30px"}}>
+    Frequently Asked Questions
+  </h1>
+  <Accordion>
+    {faqs.map((faq, index) => (
+      <Accordion.Item 
+        eventKey={index.toString()} 
+        key={index} 
+        style={{ 
+          backgroundColor: "#593d77", 
+          color: "#ffffff", 
+          border: "1px solid #593d77", 
+          marginBottom: "10px" ,
+          borderRadius: "5px",
+        }}
+      >
+        <Accordion.Header 
+          style={{ 
+            backgroundColor: "#593d77", 
+            color: "#ffffff", 
+            fontWeight: "bold", 
+          }}
+        >
+          {faq.question}
+        </Accordion.Header>
+        <Accordion.Body 
+          style={{ 
+            backgroundColor: "#593d77", 
+            color: "#593d77" 
+          }}
+        >
+          {faq.answer}
+        </Accordion.Body>
+      </Accordion.Item>
+    ))}
+  </Accordion>
+</div>
+
       </Container>
     </Container>
   );

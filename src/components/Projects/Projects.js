@@ -1,34 +1,84 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
-import bindeep from "../../Assets/Projects/issue2.jpg";
+import ProjectCard from "./ProjectCards"; // Assuming this is your project card component
+import bindeep from "../../Assets/Projects/issue2.webp";
+import bindeepleg from "../../Assets/Projects/bindeep_legendary.webp";
+import bindeeprare from "../../Assets/Projects/bindeep_rare.webp";
 import activation from "../../Assets/Projects/issue1.webp";
+import sale from "../../Assets/sale.webp";
 import pallocomics from "../../Assets/logoball.png";
 
 function Projects() {
-  
+
   return (
     <Container fluid className="project-section">
       <Container>
-      <img src={pallocomics} className="img-fluid" alt="logo" style={{borderRadius:"none", height:"auto", width:"150px", borderRadius:"none"}} />
+        <img
+          src={pallocomics}
+          className="img-fluid"
+          alt="logo"
+          style={{
+            borderRadius: "none",
+            height: "auto",
+            width: "150px",
+            borderRadius: "none",
+          }}
+        />
         <h1 className="project-heading">
           Finland's first <strong className="purple">on-chain</strong> comic series.
         </h1>
-        <p style={{ maxWidth: "600px", margin: "auto", fontSize:"1rem", fontWeight:"700" }}>
-        Experimental sci-fi adventure about life inside computers. O'Pall!
+        <p
+          style={{
+            maxWidth: "600px",
+            margin: "auto",
+            fontSize: "1rem",
+            fontWeight: "700",
+          }}
+        >
+          Experimental sci-fi adventure about life inside computers. O'Pall!
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+           {/* Bin Deep Card with Badge */}
+           <Col md={4} className="project-card">
+  
+  <ProjectCard
+    imgPath={sale}
+    modalImage={[bindeep, bindeeprare, bindeepleg]} // Modal image (could be different)
+    isBlog={false}
+    title="#2 - Bin Deep"
+    info="Limited supply: 200"
+    titlelong="Pall-O 02: Bin Deep"
+    pages="57"
+    year="2024"
+    button="Get the comic"
+    description={
+      <>
+        {"To escape, Plop has to find a way through Trash Bin node. Unfortunately, The Bin is a home for all kinds of creepwares."}
+      </>
+    }
+    demoLink="https://www.dreader.app/comic-issue/132/"
+    pageimages={[
+      "/pages/BinDeep/1.webp",
+      "/pages/BinDeep/2.webp",
+      "/pages/BinDeep/3.webp",
+      "/pages/BinDeep/4.webp",
+      "/pages/BinDeep/5.webp",
+    ]}
+  />
+</Col>
+          {/* Activation Card */}
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={activation}
               isBlog={false}
               title="#1 - Activation"
-              titlelong= "Pall-O 01: Activation"
+              info="Free to read"
+              titlelong="Pall-O 01: Activation"
               description="Unappreciated node gardener tries to prove he is not completely garbage. Same time AI programs find new innovative ways to make Pall-O network more efficient."
               pages="48"
               year="2024"
+                  button="Read the comic"
               demoLink="https://www.dreader.app/comic-issue/116/"
-              pageimages = {[ 
+              pageimages={[
                 "/pages/Activation/1.webp",
                 "/pages/Activation/2.webp",
                 "/pages/Activation/3.webp",
@@ -37,31 +87,15 @@ function Projects() {
               ]}
             />
           </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bindeep}
-              isBlog={false}
-              title="#2 - Bin Deep"
-              titlelong="Pall-O 02: Bin Deep"
-              pages="57"
-              year="2024"
-              description={<>{"To escape, Plop has to find a way through Trash Bin node. Unfortunately, The Bin is a home for all kinds of creepwares."}
-            </>}
-              demoLink="https://www.dreader.app/comic-issue/132/"
-              pageimages = {[ 
-                "/pages/BinDeep/1.webp",
-                "/pages/BinDeep/2.webp",
-                "/pages/BinDeep/3.webp",
-                "/pages/BinDeep/4.webp",
-                "/pages/BinDeep/5.webp",
-              ]}
-            />
-          </Col>
         </Row>
-        <p style={{ maxWidth: "600px", margin: "auto", fontSize:"0.88em" }}>
-        Thanks to blockchain technology, digital comics can now be treated almost like physical ones. 
-        When you purchase our comic, you gain the freedom to choose: will you unwrap it, resell it, 
-        or request our signature? Finally, digital comics are truly collectible.
+        <p
+          style={{
+            maxWidth: "600px",
+            margin: "auto",
+            fontSize: "0.88em",
+          }}
+        >
+          Thanks to blockchain technology, digital comics can now be treated almost like physical ones. When you purchase our comic, you gain the freedom to choose: will you unwrap it, resell it, or request our signature? Finally, digital comics are truly collectible.
         </p>
       </Container>
     </Container>

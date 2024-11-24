@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import dreader from "../../Assets/dreader.png";
 import ComicReader from "./comics/ComicReader.js";
+import Carousel from "react-bootstrap/Carousel";  // Import the Carousel component
 
 function ProjectCards(props) {
   const [showModal, setShowModal] = useState(false);
@@ -17,7 +18,8 @@ function ProjectCards(props) {
       <Card className="project-card-view" onClick={handleShow} style={{ cursor: "pointer", maxWidth: "350px", margin: "auto" }}>
         <Card.Img variant="top" src={props.imgPath} alt="card-img" />
         <Card.Body>
-          <Card.Title>{props.title}</Card.Title>
+          <Card.Title style={{margin:0, fontSize:"1.8rem"}}>{props.title}</Card.Title>
+          <Card.Title style={{color:"#ffa600", margin:0, fontSize:"1rem"}}>{props.info}</Card.Title>
         </Card.Body>
       </Card>
 
@@ -56,14 +58,31 @@ function ProjectCards(props) {
         </Modal.Header>
 
         <Modal.Body style={{ padding: "2rem" }}>
-          <img 
-            src={props.imgPath} 
-            alt={props.title} 
-            className="img-fluid mb-3" 
-            style={{ borderRadius: "8px", maxWidth: "100%", loading:"lazy" }} 
-          />
+{/* Render Carousel if modalImage array is provided and not the same as imgPath */}
+{Array.isArray(props.modalImage) ? (
+            <Carousel interval={2000}>
+              {props.modalImage.map((image, index) => (
+                <Carousel.Item key={index}>
+                  <img
+                    src={image} // Use images from modalImage array
+                    alt={`Slide ${index + 1}`}
+                    className="img-fluid mb-3"
+                    style={{ borderRadius: "8px", maxWidth: "100%" }}
+                  />
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          ) : (
+            // Fallback to single modalImage if no array is provided
+            <img 
+              src={props.modalImage || props.imgPath} 
+              alt={props.title} 
+              className="img-fluid mb-3"
+              style={{ borderRadius: "8px", maxWidth: "100%" }} 
+            />
+          )}
 <div style={{ maxWidth: "600px", margin: "auto" }}>
-  <p style={{ margin: "5px 0 2px 0" }}><strong>Description:</strong> {props.description}</p>
+  <p style={{ margin: "5px 0 2px 0" }}><strong></strong> {props.description}</p>
   <p style={{ margin: "10px 0 2px 0" }}><strong>Pages:</strong> {props.pages}</p>
   <p style={{ margin: "5px 0" }}><strong>Year:</strong> {props.year}</p>
 </div>
@@ -71,7 +90,7 @@ function ProjectCards(props) {
           <div style={{ display: "flex", justifyContent: "center", width: "100%", marginBottom:"30px", marginTop:"20px" }}>
           <Button className="button" variant="primary" href={props.demoLink} target="_blank">
     <img src={dreader} className="dreader" alt="dreader" /> &nbsp;
-    Read on dReader
+    {props.button}
   </Button>
   </div>
           <ComicReader pages={props.pageimages}/>
