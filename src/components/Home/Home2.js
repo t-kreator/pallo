@@ -5,12 +5,6 @@ import gulp from "../../Assets/Gulprageolutta_optimized.gif";
 import moon from "../../Assets/pallotothemoon_mini_resize.gif";
 import best from "../../Assets/thebest_mini_resize.gif";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiOutlineTwitter,
-  AiFillInstagram,
-  AiFillYoutube,
-  AiFillHeart
-} from "react-icons/ai";
 
 function Home2() {
   return (
@@ -22,7 +16,7 @@ function Home2() {
   <p>Pall-O is a groundbreaking sci-fi comic blending retro gaming vibes, 
     unique characters, and an unforgettable adventure—now live on dReader app.
     </p>
-    <Button variant="primary" href={"https://pall-o.com/comics"} style={{marginTop:"10px"}}>
+    <Button className= "button" variant="primary" href={"https://pall-o.com/comics"}>
     Jump in!
   </Button>
 </div>
@@ -50,7 +44,7 @@ function Home2() {
       alt="Fast & Secure"
       loading="lazy"
     />
-    <h1 className="feature-title">FAST & SECURE</h1>
+    <h1 className="feature-title">FAST + SECURE</h1>
     <p className="feature-body">
       Our digital comics run on the reliable, lightning-fast Solana blockchain.
       Don’t worry—you don’t need to be a tech whiz to enjoy them!
@@ -64,7 +58,7 @@ function Home2() {
       alt="Physical & Digital"
       loading="lazy"
     />
-    <h1 className="feature-title">PHYSICAL & DIGITAL</h1>
+    <h1 className="feature-title">PHYSICAL + DIGITAL</h1>
     <p className="feature-body">
       We’re reimagining comics for the modern era, blending the best of both
       worlds. Issues are released as digital collectibles in the dReader app
@@ -79,15 +73,15 @@ function Home2() {
   The creators of Pall-O are two Finnish millennials, 
   trapped in economic chaos and constantly feeling like outsiders in life.
     </p>
-    <Button variant="primary" href={"https://pall-o.com/about"} style={{marginTop:"10px"}}>
+    <Button className= "button" variant="primary" href={"https://pall-o.com/about"} style={{marginTop:"10px"}}>
     Read more
   </Button>
 </div>
 </div>
         <Row style={{marginTop:"30px"}}>
           <Col md={8} fluid className="home-about-section">
-            <h1 style={{ fontSize: "1.7em", textAlign:"left" }}>
-              EVENTS
+            <h1 style={{ fontSize: "1.7em", textAlign:"left", color:"#ffa600"}}>
+              News
             </h1>
             <p className="home-about-body">
             15th-17th of November 2024 -  Oulu Comic Festival
@@ -96,54 +90,6 @@ function Home2() {
           <Col 
           md={4} style={{ marginTop:"0px" }} className="about-img">
           <img src={festival} alt="about" className="img-fluid"  style={{width:"250px", padding:0, loading:"lazy"}}/>
-          </Col>
-        </Row>
-
-        <Row>
-          <Col md={12} className="home-about-social" style={{ marginTop:"50px" }} >
-            <h1 style={{ fontSize: "1.3em"}}>FIND US ON</h1>
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://x.com/digipallo"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/threat_kreator"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.youtube.com/@PALL-O"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillYoutube />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://dreader.app/comic/pall-o"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillHeart />
-                </a>
-              </li>
-            </ul>
           </Col>
         </Row>
       </Container>

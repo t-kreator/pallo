@@ -8,7 +8,7 @@ function Home() {
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
           <Row>
-            <Col md={8} className="home-header">
+            <Col  className="home-header">
               <h1 className="heading-name">
                 Welcome to
                 <strong className="main-name"> PALL-O</strong>

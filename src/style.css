@@ -1,17 +1,11 @@
+/*Leipäteksti (valkea): #dff3ef
+Oranssi väri: #ffa600 
+Violetti: #593d77*/
 html,body {
 background-color: rgb(7, 6, 13);
 
+  --imp-text-color: #ffa600;
 
-  --imp-text-color: #fe9f39;
-
-}
-
-.purple {
-  color: var(--imp-text-color) !important;
-}
-
-button:focus {
-  box-shadow: none !important;
 }
 
 /* --------- */
@@ -54,7 +48,7 @@ button:focus {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(253, 166, 15, 0.959);
+  background: #ffa600;
   border-radius: 12px;
 }
 
@@ -89,7 +83,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #fbb048 !important;
+  background-color: #ffa600 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -134,7 +128,7 @@ button:focus {
 
 @media (max-width: 767px) {
   .navbar {
-    background-color: #1b1a2ea4 !important;
+    background-color: #1b1a2ee0 !important;
     padding: 1rem 1rem !important;
     font-size: 1.4rem !important;
   }
@@ -143,7 +137,7 @@ button:focus {
   }
 }
 .navbar-brand {
-  color: rgb(255, 198, 25) !important;
+  color: #ffa600 !important;
 }
 
 .logo {
@@ -152,7 +146,7 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: rgb(255, 173, 58) !important;
+  color: #ffa600 !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Adding dark shadow */
@@ -189,7 +183,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #feae2d;
+  background: #ffa600;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -213,8 +207,10 @@ button:focus {
 
 .home-section {
   position: relative;
+  padding: 30px !important;
   z-index: 1;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.9) 100%), url(./Assets/banner.webp);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.9) 100%), 
+  url(./Assets/banner.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -227,18 +223,16 @@ button:focus {
 }
 
 .home-content {
-  padding: 5rem 0 5rem !important;
   color: rgb(245, 245, 245);
-  text-align: left;
+  text-align: center;
   position: relative;
   z-index: 2;
 }
 
 @media (max-width: 1000px) {
 .home-content {
-  padding: 9rem 0 20rem !important;
   color: rgb(245, 245, 245);
-  text-align: left;
+  text-align: center;
 }
 }
 
@@ -248,10 +242,23 @@ button:focus {
 }
 
 .main-name {
-  color: #ffb219;
+  color: #ffa600;
   white-space: nowrap;
   font-size: 2rem; /* Adjust font size as necessary */
   font-weight: bold;
+  text-align: left;
+}
+
+.flavor-text{
+  font-size: 1.3rem; 
+  font-weight: 700 !important;
+}
+
+@media (max-width: 800px) {
+  .flavor-text {
+    font-size: 1.1rem !important;
+  }
+
 }
 
 .image-container {
@@ -265,7 +272,7 @@ button:focus {
   flex-direction: column; /* Stacks content vertically */
   justify-content: left; /* Center content vertically */
   align-items: left; /* Center content horizontally */
-  color: white; /* Text color for readability */
+  color: #dff3ef; /* Text color for readability */
   padding: 20px; /* Optional padding */
   margin-bottom: 30px;
   margin-top: 20px;
@@ -283,7 +290,7 @@ button:focus {
   flex-direction: column; /* Stacks content vertically */
   justify-content: left; /* Center content vertically */
   align-items: left; /* Center content horizontally */
-  color: white; /* Text color for readability */
+  color: #dff3ef; /* Text color for readability */
   padding: 20px; /* Optional padding */
   margin-bottom: 30px;
   margin-top: 20px;
@@ -312,7 +319,7 @@ button:focus {
 }
 
 .home-about-description {
-  color: white !important;
+  color: #dff3ef !important;
   padding-top: 10px !important;
   padding-bottom: 0px !important;
   text-align: left;
@@ -326,27 +333,26 @@ button:focus {
 
 .home-about-social {
   text-align: center !important;
-  padding-top: 15px;
-  color: white !important;
+  color: #ffa600  !important;
 }
 
 .home-about-social-links {
   justify-content: center !important;
-  padding-top: 15px !important;
+  padding-top: 5px !important;
   display: inline-block !important;
-  position: relative !important;
+  position: center !important;
   padding-inline-start: 0 !important;
 }
 
 .home-social-icons {
   position: relative !important;
   display: inline-block !important;
-  width: 40px !important;
-  height: 40px !important;
+  width: 35px !important;
+  height: 35px !important;
   text-align: center !important;
-  font-size: 1.2em !important;
+  font-size: 1em !important;
   line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
+  background: #593d77 !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
 }
@@ -359,7 +365,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #ff9b21;
+  background: #ffa600;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -367,33 +373,29 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #ffb433;
 }
 
 .home-social-icons:hover {
-  color: #d1831d;
-  box-shadow: 0 0 5px #e68c0f;
+  color: #ffb34f;
+  box-shadow: 0 0 10px #ffa600;
   text-shadow: 0 0 2px #ffa600;
 }
 
 .social-icons {
   display: inline-block !important;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 0px 8px !important; /* Fine-tune spacing between icons */
 }
 
 .icon-colour {
-  color: #905900 !important;
+  color: #ffa600 !important;
 }
 
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(6, 6, 11);
+  background-color: rgb(7, 6, 13);
   bottom: 0 !important;
-  padding-top: 10px !important;
-  padding-bottom: 8px !important ;
 }
 .footer-copywright {
   text-align: center !important;
@@ -416,9 +418,16 @@ button:focus {
 
 .footer h3 {
   font-size: 1em;
-  color: white !important;
+  color: #dff3ef !important;
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
+}
+.footer h4 {
+  font-size: 0.8em;
+  color: #dff3ef !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+  font-weight: 200 !important;
 }
 .footer-icons {
   margin-top: 0.5em !important;
@@ -426,9 +435,6 @@ button:focus {
   padding: 0 !important;
 }
 
-.blockquote-footer {
-  color: #ffab03 !important;
-}
 /* --------- */
 /* Projects */
 /* --------- */
@@ -449,7 +455,7 @@ button:focus {
 
 .project-card-view {
   box-shadow: 0 4px 5px 3px rgba(22, 23, 48, 0.459) !important;
-  color: white !important;
+  color: #dff3ef !important;
   background-color: transparent !important;
   opacity: 1 !important;
   transition: all 0.5s ease 0s !important;
@@ -472,13 +478,13 @@ button:focus {
 .blog-card-view {
   background-color: transparent !important;
   box-shadow: 0 3px 3px 2px rgba(255, 175, 47, 0.459) !important;
-  color: white !important;
+  color: #dff3ef !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
 
 .blog-link {
-  color: white !important;
+  color: #dff3ef !important;
   text-decoration: none !important;
 }
 
@@ -520,8 +526,8 @@ button:focus {
   box-shadow: none !important;
 }
 .project-heading {
-  color: white !important;
-  font-size: 1.5em !important;
+  color: #ffa600 !important;
+  font-size: 1.4em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
 
@@ -534,45 +540,41 @@ button:focus {
 .about-section {
   position: relative !important;
   background-image: var(--section-background-color) !important;
-  color: white !important;
+  color: #dff3ef !important;
 }
 
-.tech-icons {
-  font-size: 4.5em !important;
-  margin: 15px !important;
-  padding: 10px !important;
-  opacity: 0.93 !important;
-  border: 1.7px solid rgba(255, 162, 40, 0.637) !important;
-  vertical-align: middle !important;
-  text-align: center !important;
-  border-radius: 5px !important;
-  display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(255, 157, 1, 0.137) !important;
-  overflow: hidden !important;
-  transition: all 0.4s ease 0s !important;
-}
-
-@media (max-width: 767px) {
-  .tech-icons {
-    margin: 10px !important;
-  }
-}
-
-.tech-icons:hover {
-  transform: scale(1.05) !important;
-  overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
-}
-.tech-icon-images {
-  padding: 20px !important;
-  line-height: 1.6 !important;
-}
 
 .quote-card-view {
   border: none !important;
-  color: white !important;
+  color: #dff3ef !important;
   background-color: transparent !important;
 }
+
+.creators {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.9) 100%), url('./Assets/about.webp'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: right; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  width: 100%; /* Set the container width */
+  height: 500px; /* Set the container height */
+  display: flex; /* Allows alignment of children */
+  flex-direction: column; /* Stacks content vertically */
+  justify-content: flex-end; /* Aligns content vertically to the bottom */
+  align-items: flex-start; ; /* Centers content horizontally */
+  color: #dff3ef; /* Text color for readability */
+  padding: 20px; /* Optional padding */
+  margin-bottom: 30px;
+  margin-top: 20px;
+  border-radius: 25px;
+  position: relative;
+}
+
+.creators h1, .creators p {
+  max-width: 600px; /* Set the max width of the text */
+  width: 100%; /* Ensures it takes up all the available width within the container */
+  text-align: left; /* Optional: ensures text is aligned left */
+}
+
 
 .about-activity {
   list-style: none !important;
@@ -646,7 +648,7 @@ button:focus {
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.8);
-  color: white;
+  color: #dff3ef;
   padding: 5px 15px;
   border-radius: 15px;
   font-size: 1.2em;
@@ -665,23 +667,29 @@ button:focus {
   gap: 20px;
 }
 
-button {
+div .button {
+  margin-top: 10px;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  background-color: rgb(243, 158, 11);
-  color: white;
+  background-color: #593d77 !important;
+  color: #ffa600 !important;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px !important;
   text-shadow: none;
+  outline: none !important;
+  transition: opacity 0.3s ease; /* Smooth opacity change */
+  font-family: "Saira Condensed", sans-serif !important; /* Ensure the button uses Saira Condensed */
+  font-weight: 700 !important; /* Regular weight for buttons */
 }
 
-button:hover {
-  background-color: rgba(253, 193, 90, 0.959);
+div .button:hover {
+  background-color: #593d77bb !important;
+  color: #ffa600a3 !important;
 }
 
-button:disabled {
-  background-color: #ccc;
+div .button:disabled {
+  background-color: #ccc !important;
   cursor: not-allowed;
 }
 
@@ -752,7 +760,7 @@ span {
 
 .dark-modal .modal-content {
   background-color: #0c0c0c; /* Dark background */
-  color: #ffffff;           /* White text */
+  color: #dff3ef;           /* White text */
   border-radius: 10px;      /* Rounded corners */
   border: none;             /* Remove border */
 }
@@ -799,7 +807,7 @@ span {
 
 .feature-body {
   font-size: 0.9em;
-  color: #ffffff; /* White text for readability */
+  color: #dff3ef; /* White text for readability */
   margin: 10px 20px; /* Padding around paragraphs */
   line-height: 1.5;
 }

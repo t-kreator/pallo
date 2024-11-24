@@ -10,19 +10,12 @@ function Projects() {
   return (
     <Container fluid className="project-section">
       <Container>
-      <img src={pallocomics} className="img-fluid" alt="avatar" style={{borderRadius:"none"}} />
+      <img src={pallocomics} className="img-fluid" alt="logo" style={{borderRadius:"none", height:"auto", width:"150px", borderRadius:"none"}} />
         <h1 className="project-heading">
           Finland's first <strong className="purple">on-chain</strong> comic series.
         </h1>
-        <br/>
-        <p style={{ maxWidth: "600px", margin: "auto", color: "white", fontSize:"0.95em" }}>
+        <p style={{ maxWidth: "600px", margin: "auto", fontSize:"1rem", fontWeight:"700" }}>
         Experimental sci-fi adventure about life inside computers. O'Pall!
-        </p>
-        <br/>
-        <p style={{ maxWidth: "600px", margin: "auto", color: "white", fontSize:"0.88em" }}>
-        Thanks to blockchain technology, digital comics can now be treated almost like physical ones. 
-        When you purchase our comic, you gain the freedom to choose: will you unwrap it, resell it, 
-        or request our signature? Finally, digital comics are truly collectible.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
@@ -65,6 +58,11 @@ function Projects() {
             />
           </Col>
         </Row>
+        <p style={{ maxWidth: "600px", margin: "auto", fontSize:"0.88em" }}>
+        Thanks to blockchain technology, digital comics can now be treated almost like physical ones. 
+        When you purchase our comic, you gain the freedom to choose: will you unwrap it, resell it, 
+        or request our signature? Finally, digital comics are truly collectible.
+        </p>
       </Container>
     </Container>
   );

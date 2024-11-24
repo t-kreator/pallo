@@ -68,8 +68,8 @@ function ProjectCards(props) {
   <p style={{ margin: "5px 0" }}><strong>Year:</strong> {props.year}</p>
 </div>
 
-          <div style={{ display: "flex", justifyContent: "center", width: "100%", marginBottom:"30px", marginTop:"30px" }}>
-          <Button variant="primary" href={props.demoLink} target="_blank">
+          <div style={{ display: "flex", justifyContent: "center", width: "100%", marginBottom:"30px", marginTop:"20px" }}>
+          <Button className="button" variant="primary" href={props.demoLink} target="_blank">
     <img src={dreader} className="dreader" alt="dreader" /> &nbsp;
     Read on dReader
   </Button>

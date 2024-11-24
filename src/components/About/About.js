@@ -9,28 +9,25 @@ import tk from "../../Assets/tk.webp";
 function About() {
   return (
     <Container>
-      <Container className="quote-card-view" style={{marginTop:"80px"}}>
-       <Col md={7} className="quote-card-view"
-                   style={{
-                    padding: "26px",
-                  }}>
-            <h1 style={{ fontSize: "1.7em" }}>
-            <strong className="purple">CREATORS</strong>
-            </h1>
-            <blockquote className="blockquote mb-0">
-      <p style={{paddingTop:"20px", textAlign: "justify",fontSize: "0.8em" }}>
+     <Container className="quote-card-view" style={{ marginTop: "100px" }}>
+  <Col className="creators">
+    <h1 style={{ fontSize: "1.7em" }}>
+      <strong>Creators</strong>
+    </h1>
+    <blockquote className="blockquote mb-0">
+      <p style={{ paddingTop: "20px", textAlign: "justify", fontSize: "0.8em" }}>
       We’re a bold two-person indie studio and pioneers in the comic industry. We’ve created Finland’s first on-chain comic series!
-Our focus is clear: to bring high-quality comics to an international audience and redefine the comic industry for the modern era.
+      Our focus is clear: to bring high-quality comics to an international audience and redefine the comic industry for the modern era.
       </p>
-      <p style={{paddingBottom:"0px", paddingTop:"0px", textAlign: "justify",fontSize: "0.8em" }}>
+      <p style={{ paddingBottom: "0px", paddingTop: "0px", textAlign: "justify", fontSize: "0.8em" }}>
       As an experimental team with strong technological backgrounds in the game industry, we push boundaries, 
       explore new possibilities, and create stories the world has never seen before.
-</p>
-<p style={{paddingBottom:"20px", paddingTop:"0px", textAlign: "justify",fontSize: "0.8em" }}>
-Based in Oulu, Finland, we’re ready to make our mark.
-</p>
-      </blockquote>
-      </Col>
+      </p>
+      <p style={{ paddingBottom: "20px", paddingTop: "0px", textAlign: "justify", fontSize: "0.8em" }}>
+        Based in Oulu, Finland, we’re ready to make our mark.
+      </p>
+    </blockquote>
+  </Col>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
             md={7}
@@ -47,7 +44,7 @@ Based in Oulu, Finland, we’re ready to make our mark.
             Outcast who creates comics, games and art.
           </p>
             <Aboutcard />
-            <Button variant="primary" href="https://threatkreator.com/" target="_blank">
+            <Button className="button"  variant="primary" href="https://threatkreator.com/" target="_blank">
           {"Portfolio"}
         </Button>
           </Col>
