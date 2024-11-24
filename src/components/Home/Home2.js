@@ -112,7 +112,7 @@ function Home2() {
           <img src={festival} alt="about" className="img-fluid"  style={{width:"250px", padding:0, loading:"lazy"}}/>
           </Col>
         </Row>
-        <div className="faq-container" style={{ marginTop: "50px", padding: "20px", backgroundColor: "none", borderRadius: "5px" }}>
+        <div className="faq-container" style={{ marginTop: "50px", padding: "20px", backgroundColor: "rgba(0,0,0,0)"}}>
   <h1 style={{ fontSize: "1.7em", textAlign: "center", marginBottom: "30px"}}>
     Frequently Asked Questions
   </h1>
@@ -122,17 +122,15 @@ function Home2() {
         eventKey={index.toString()} 
         key={index} 
         style={{ 
-          backgroundColor: "#593d77", 
-          color: "#ffffff", 
-          border: "1px solid #593d77", 
+          backgroundColor: "rgba(0,0,0,0)", 
+          color: "#593d77", 
           marginBottom: "10px" ,
-          borderRadius: "5px",
         }}
       >
         <Accordion.Header 
           style={{ 
-            backgroundColor: "#593d77", 
-            color: "#ffffff", 
+            backgroundColor: "rgba(0,0,0,0)", 
+            color: "#593d77", 
             fontWeight: "bold", 
           }}
         >
@@ -140,8 +138,10 @@ function Home2() {
         </Accordion.Header>
         <Accordion.Body 
           style={{ 
-            backgroundColor: "#593d77", 
-            color: "#593d77" 
+            backgroundColor: "rgba(0,0,0,0)", 
+            color: "#593d77" ,
+            textAlign: "left"
+          
           }}
         >
           {faq.answer}

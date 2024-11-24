@@ -802,7 +802,6 @@
     width: 60%; /* 90% width on mobile/tablet */
     margin: 0 auto; /* Center the container */
     padding: 20px;
-    border-radius: 5px;
   }
   
   @media (max-width: 1000px) { 
@@ -813,38 +812,31 @@
   }
 
   .accordion-item {
-    background-color: #593d77 !important;
+    background-color: rgba(0,0,0,0) !important;
     color: #dff3ef !important;
-    border: 1px solid #593d77;
-    border-radius: 5px;
     margin-bottom: 10px;
   }
   
   .accordion-header {
-    background-color: #593d77!important;
+    background-color: rgba(0,0,0,0) !important;
     color: #dff3ef !important;
     font-weight: bold;
   }
   
   
   .accordion-button {
-    background-color: rgb(30, 30, 40) !important;
+    background-color: rgba(0,0,0,0) !important;
     color: #dff3ef !important;
   }
-/* Ensuring no link color interferes with the accordion button */
-.accordion-button {
-  color: #dff3ef; /* Set text color for the accordion button */
-  text-decoration: none; /* Remove any underlines from links */
-}
 
 /* Change the arrow color when collapsed (default state) */
 .accordion-button::after {
-  border-color: transparent transparent purple transparent; /* Purple arrow when collapsed */
+  border-color:  purple  !important; /* Purple arrow when collapsed */
 }
 
 /* Change the arrow color when expanded */
 .accordion-button:not(.collapsed)::after {
-  border-color: transparent transparent orange transparent; /* Orange arrow when expanded */
+  border-color: transparent transparent orange transparent !important; /* Orange arrow when expanded */
 }
 
 /* Optional: Remove default focus outline or box-shadow when focused */
@@ -853,6 +845,6 @@
   box-shadow: none !important;
 }
   .accordion-body {
-    background-color: rgb(15, 15, 25) !important;
+    background-color: rgba(0,0,0,0) !important;
     color: #dff3ef!important;
   }
