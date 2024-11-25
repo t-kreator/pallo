@@ -20,7 +20,7 @@ function Footer() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://x.com/digipallo"
+                  href="https://x.com/pallocomics"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"

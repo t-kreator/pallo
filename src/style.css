@@ -6,6 +6,9 @@
     --imp-text-color: #ffa600;
   }
 
+  h1{
+    color: #ffa600 !important;
+  }
   /* --------- */
   /*  Preloader */
   /* --------- */
