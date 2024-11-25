@@ -123,12 +123,12 @@ function Home2() {
     >
       <Accordion.Header 
         className="custom-accordion-header"
-        style={{ color: "#593d77", fontWeight: "bold" }}
+        style={{fontWeight: "bold" }}
       >
         {faq.question}
       </Accordion.Header>
       <Accordion.Body 
-        style={{ color: "#593d77", textAlign: "left" }}
+        style={{  textAlign: "left" }}
       >
         {/* Use dangerouslySetInnerHTML to render the HTML content correctly */}
         <div 

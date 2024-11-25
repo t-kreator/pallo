@@ -1,11 +1,12 @@
 import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards"; // Assuming this is your project card component
+import ProjectCard from "./ProjectCards"; 
+import sale from "../../Assets/sale.webp";
 import bindeep from "../../Assets/Projects/issue2.webp";
 import bindeepleg from "../../Assets/Projects/bindeep_legendary.webp";
 import bindeeprare from "../../Assets/Projects/bindeep_rare.webp";
 import activation from "../../Assets/Projects/issue1.webp";
-import sale from "../../Assets/sale.webp";
 import pallocomics from "../../Assets/logoball.png";
+
 
 function Projects() {
 

@@ -93,7 +93,8 @@
 
   .navbar-toggler:focus,
   .navbar-toggler:active {
-    outline: 0 !important;
+    outline: none !important;  /* Removes the outline */
+    box-shadow: none !important; /* Removes any box-shadow */
   }
 
   .navbar-toggler span:nth-child(1),
@@ -811,32 +812,39 @@
     width: 60%; /* 90% width on mobile/tablet */
     margin: 0 auto; /* Center the container */
     padding: 20px;
+    outline: none !important;
   }
   
   @media (max-width: 1000px) { 
     /* For larger desktop screens */
     .faq-container {
-      width: 1000%; /* 50% width on desktop */
+      width: 100%; /* 50% width on desktop */
     }
   }
 
   .accordion-body {
     background-color: rgba(0,0,0,0) !important;
-    color: #dff3ef!important;
+
     margin-left: 5px !important;
     margin-right: 10px !important;
+    outline: none !important;
   }
 
   .accordion-item {
     background-color: rgba(0,0,0,0) !important;
     color: #dff3ef !important;
     margin-bottom: 10px !important;
+    outline: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
     
   }
   
   .accordion-header {
     background-color: rgba(0,0,0,0) !important;
     color: #dff3ef !important;
+    outline: none !important;
   }
   
   .custom-accordion-header::after {
@@ -844,10 +852,13 @@
   }
   
   .accordion-button {
-    background-color: rgba(0,0,0,0) !important;
+    background-color: transparent !important;
     color: #dff3ef !important;
     font-weight: bold !important; /* Make the question text bold */
     padding: 10px !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
   }
 
 /* Optional: Remove default focus outline or box-shadow when focused */
