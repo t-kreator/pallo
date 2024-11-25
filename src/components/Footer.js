@@ -4,8 +4,8 @@ import {
   AiOutlineTwitter,
   AiFillInstagram,
   AiFillYoutube,
-  AiFillHeart
 } from "react-icons/ai";
+import bunbun from "./../dreadericon.png";
 
 function Footer() {
   let date = new Date();
@@ -55,7 +55,16 @@ function Footer() {
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillHeart />
+                <img
+                  src={bunbun} // Render the image
+                  alt="bun bun"
+                  style={{
+                    width: "0.9rem", // Set the width of the icon (similar to other icons)
+                    height: "0.9rem", // Set the height to keep it uniform
+                    objectFit: "contain", // Ensures the image doesn't stretch/distort
+                    margin: "0 5px", // Adjust spacing if needed
+                  }}
+                />
                 </a>
               </li>
             </ul>

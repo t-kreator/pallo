@@ -11,19 +11,19 @@ function About() {
     <Container>
      <Container className="quote-card-view" style={{ marginTop: "100px" }}>
   <Col className="creators">
-    <h1 style={{ fontSize: "1.7em" }}>
+    <h1 >
       <strong>Creators</strong>
     </h1>
     <blockquote className="blockquote mb-0">
-      <p style={{ paddingTop: "20px", textAlign: "justify", fontSize: "0.8em" }}>
+      <p >
       We’re a bold two-person indie studio and pioneers in the comic industry. We’ve created Finland’s first on-chain comic series!
       Our focus is clear: to bring high-quality comics to an international audience and redefine the comic industry for the modern era.
       </p>
-      <p style={{ paddingBottom: "0px", paddingTop: "0px", textAlign: "justify", fontSize: "0.8em" }}>
+      <p >
       As an experimental team with strong technological backgrounds in the game industry, we push boundaries, 
       explore new possibilities, and create stories the world has never seen before.
       </p>
-      <p style={{ paddingBottom: "20px", paddingTop: "0px", textAlign: "justify", fontSize: "0.8em" }}>
+      <p >
         Based in Oulu, Finland, we’re ready to make our mark.
       </p>
     </blockquote>
@@ -44,7 +44,7 @@ function About() {
             Outcast who creates comics, games and art.
           </p>
             <Aboutcard />
-            <Button className="button"  variant="primary" href="https://threatkreator.com/" target="_blank">
+            <Button className="buttonBig"  variant="primary" href="https://threatkreator.com/" target="_blank">
           {"Portfolio"}
         </Button>
           </Col>

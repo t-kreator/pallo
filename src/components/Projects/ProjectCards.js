@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import dreader from "../../Assets/dreader.png";
+import bunbun from "./../../dreadericon.png";
 import ComicReader from "./comics/ComicReader.js";
 import Carousel from "react-bootstrap/Carousel";  // Import the Carousel component
 
@@ -60,7 +60,7 @@ function ProjectCards(props) {
         <Modal.Body style={{ padding: "2rem" }}>
 {/* Render Carousel if modalImage array is provided and not the same as imgPath */}
 {Array.isArray(props.modalImage) ? (
-            <Carousel interval={2000}>
+            <Carousel interval={1000}>
               {props.modalImage.map((image, index) => (
                 <Carousel.Item key={index}>
                   <img
@@ -88,8 +88,8 @@ function ProjectCards(props) {
 </div>
 
           <div style={{ display: "flex", justifyContent: "center", width: "100%", marginBottom:"30px", marginTop:"20px" }}>
-          <Button className="button" variant="primary" href={props.demoLink} target="_blank">
-    <img src={dreader} className="dreader" alt="dreader" /> &nbsp;
+          <Button className="buttonBig" variant="primary" href={props.demoLink} target="_blank">
+    <img src={bunbun} className="dreader" alt="dreader" /> &nbsp;
     {props.button}
   </Button>
   </div>

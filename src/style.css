@@ -126,9 +126,12 @@
 
   @media (max-width: 767px) {
     .navbar {
-      background-color: #12111ee2 !important;
       padding: 1rem 1rem !important;
       font-size: 1.4rem !important;
+      background-color: #1b1a2e6b !important;
+      transition: all 0.3s ease-out 0s !important;
+      box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+      backdrop-filter: blur(15px) !important;
     }
     .navbar-nav .nav-item a::after {
       display: none !important;
@@ -242,19 +245,19 @@
   .main-name {
     color: #ffa600;
     white-space: nowrap;
-    font-size: 2rem; /* Adjust font size as necessary */
+    font-size: 2.1rem; /* Adjust font size as necessary */
     font-weight: bold;
     text-align: left;
   }
 
   .flavor-text{
-    font-size: 1.3rem; 
+    font-size: 1.4rem; 
     font-weight: 700 !important;
   }
 
   @media (max-width: 800px) {
     .flavor-text {
-      font-size: 1.1rem !important;
+      font-size: 1.2rem !important;
     }
 
   }
@@ -303,6 +306,7 @@
     z-index: 2; /* Ensure it's above any background effects */
     text-align: left; /* Align text to the left */
     max-width: 300px;
+    font-size: 1.2rem;
   }
 
   .content h1, .content p {
@@ -325,7 +329,7 @@
 
   .home-about-body {
     padding-top: 30px;
-    font-size: 1em !important;
+    font-size: 1.1em !important;
     text-align: left;
   }
 
@@ -578,7 +582,7 @@
     border-radius: 25px;
   }
   .dreader{
-    width:25px;
+    width:18px;
     height: auto;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -638,16 +642,17 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    color: #dff3ef !important; 
   }
 
-  div .button {
+  .buttonBig {
     margin-top: 10px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     background-color: #593d77 !important;
     color: #ffa600 !important;
-    border: none;
+    border: none !important;
     border-radius: 25px !important;
     text-shadow: none;
     outline: none !important;
@@ -656,12 +661,12 @@
     font-weight: 700 !important; /* Regular weight for buttons */
   }
 
-  div .button:hover {
+  .buttonBig:hover {
     background-color: #593d77bb !important;
     color: #ffa600a3 !important;
   }
 
-  div .button:disabled {
+  .buttonBig:disabled {
     background-color: #ccc !important;
     cursor: not-allowed;
   }
@@ -725,6 +730,10 @@
     }
   }
 
+  .navigation button{
+    color: #dff3ef !important;   
+  }
+
   @media (max-width: 768px) {
     .navigation button i {
       font-size: 24px; /* Smaller arrow size on mobile */
@@ -779,7 +788,7 @@
   }
 
   .feature-body {
-    font-size: 0.9em;
+    font-size: 1em;
     color: #dff3ef; /* White text for readability */
     margin: 10px 20px; /* Padding around paragraphs */
     line-height: 1.5;
@@ -811,40 +820,107 @@
     }
   }
 
+  .accordion-body {
+    background-color: rgba(0,0,0,0) !important;
+    color: #dff3ef!important;
+    margin-left: 5px !important;
+    margin-right: 10px !important;
+  }
+
   .accordion-item {
     background-color: rgba(0,0,0,0) !important;
     color: #dff3ef !important;
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
+    
   }
   
   .accordion-header {
     background-color: rgba(0,0,0,0) !important;
     color: #dff3ef !important;
-    font-weight: bold;
   }
   
+  .custom-accordion-header::after {
+    color: #ffffff !important;
+  }
   
   .accordion-button {
     background-color: rgba(0,0,0,0) !important;
     color: #dff3ef !important;
+    font-weight: bold !important; /* Make the question text bold */
+    padding: 10px !important;
   }
-
-/* Change the arrow color when collapsed (default state) */
-.accordion-button::after {
-  border-color:  purple  !important; /* Purple arrow when collapsed */
-}
-
-/* Change the arrow color when expanded */
-.accordion-button:not(.collapsed)::after {
-  border-color: transparent transparent orange transparent !important; /* Orange arrow when expanded */
-}
 
 /* Optional: Remove default focus outline or box-shadow when focused */
 .accordion-button:focus {
   outline: none !important;
   box-shadow: none !important;
 }
-  .accordion-body {
-    background-color: rgba(0,0,0,0) !important;
-    color: #dff3ef!important;
+
+.accordion-button::after {
+  content: '>' !important;
+  transition: transform 0.3s ease, color 0.3s ease;
+  transform: rotate(0deg) !important;
+  font-size: 1.7rem;
+  color: #593d77;
+  background-image: none !important;
+  background-color: #ffffff; /* Background bubble color */
+  border-radius: 50%; /* Make it circular */
+  width: 1.5rem; /* Bubble size */
+  height: 1.5rem; /* Bubble size */
+  text-align: center !important; /* Center the arrow */
+  line-height: 1.5rem; /* Center the arrow vertically */
+  font-size: 1rem; /* Adjust arrow size */
+  margin-left: auto; /* Push bubble to the right */
+  display: inline-flex; /* Use flexbox for centering */
+  justify-content: center; /* Horizontally center the arrow */
+  align-items: center; /* Vertically center the arrow */
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(90deg) !important;
+  color: #ff7b42; /* Change arrow color when expanded */
+}
+
+.creators h1 {
+  font-size: 1.7rem; /* Responsive font size based on viewport width */
+  text-align: left;
+}
+
+.creators blockquote p {
+  font-size: 1rem; /* Adjust text size for small devices */
+  text-align: justify;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 576px) {
+  .creators h1 {
+    font-size: 2rem; /* Slightly smaller font for mobile screens */
   }
+
+  .creators blockquote p {
+    font-size: 1rem; /* Adjust for smaller screens */
+  }
+}
+
+/* Media query for medium-sized devices (tablets) */
+@media (max-width: 768px) {
+  .creators h1 {
+    font-size: 2rem;  /* Slightly smaller font for tablets */
+  }
+
+  .creators blockquote p {
+    font-size: 1rem; 
+  }
+}
+
+/* Media query for larger devices (desktops) */
+@media (min-width: 1024px) {
+  .creators h1 {
+    font-size: 1.7em; /* Reset to the original font size for desktops */
+  }
+
+  .creators blockquote p {
+    font-size: 1.2rem; /* Adjust for larger screens */
+  }
+}
