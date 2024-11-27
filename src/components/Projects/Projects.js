@@ -11,7 +11,7 @@ import pallocomics from "../../Assets/logoball.png";
 function Projects() {
 
   return (
-    <Container fluid className="project-section">
+    <Container fluid={true} className="project-section">
       <Container>
         <img
           src={pallocomics}
@@ -21,7 +21,6 @@ function Projects() {
             borderRadius: "none",
             height: "auto",
             width: "150px",
-            borderRadius: "none",
           }}
         />
         <h1 className="project-heading">

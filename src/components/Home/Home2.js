@@ -26,10 +26,10 @@ function Home2() {
 ];
 
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Container fluid="true" className="home-about-section" id="about">
       <Container className="quote-card-view">
-      <div class="image-container">
-      <div class="content">
+      <div className="image-container">
+      <div className="content">
   <h1>Comics</h1>
   <p>Pall-O is a groundbreaking sci-fi comic blending retro gaming vibes, 
     unique characters, and an unforgettable adventure—now live on dReader app.
@@ -84,8 +84,8 @@ function Home2() {
     </p>
   </Col>
 </Row>
-<div class="image-container2">
-      <div class="content">
+<div className="image-container2">
+      <div className="content">
   <h1>About</h1>
   <p>
   The creators of Pall-O are two Finnish millennials, 
@@ -97,7 +97,7 @@ function Home2() {
 </div>
 </div>
         <Row style={{marginTop:"30px"}}>
-          <Col md={8} fluid className="home-about-section">
+          <Col md={8} fluid="true" className="home-about-section">
             <h1 style={{ fontSize: "1.7em", textAlign:"left", color:"#ffa600"}}>
               News
             </h1>

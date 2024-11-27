@@ -5,7 +5,7 @@ import Home2 from "./Home2";
 function Home() {
   return (
     <section>
-      <Container fluid className="home-section" id="home">
+      <Container fluid="true" className="home-section" id="home">
         <Container className="home-content">
           <Row>
             <Col  className="home-header">
