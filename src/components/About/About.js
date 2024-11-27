@@ -53,7 +53,7 @@ function About() {
             style={{ paddingTop: "20px", paddingBottom: "20px" }}
             className="about-img"
           >
-            <img src={tk} alt="about" className="img-fluid" style={{width:"150px"}} />
+            <img src={tk} alt="about" className="img-fluid" loading= "lazy"  style={{width:"150px"}} />
           </Col>
         </Row>
 
@@ -79,7 +79,7 @@ function About() {
             style={{ paddingTop: "10px", paddingBottom: "10px" }}
             className="about-img"
           >
-            <img src={pyromon} alt="about" className="img-fluid"  style={{width:"150px"}}/>
+            <img src={pyromon} alt="about" className="img-fluid" loading= "lazy" style={{width:"150px"}}/>
           </Col>
         </Row>
       </Container>

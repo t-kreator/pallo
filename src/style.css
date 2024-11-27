@@ -267,6 +267,7 @@
   }
 
   .image-container {
+    background-color: rgba(0, 0, 0, 0.5); 
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.9) 100%), url('./Assets/SeriesBanner.webp'); /* Path to your image */
     background-size: cover; /* Ensures the image covers the container */
     background-position: center; /* Centers the image */
@@ -284,6 +285,7 @@
     border-radius: 25px;
     position: relative;
   }
+
   .image-container2 {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.9) 100%), url('./Assets/creators_image.webp'); /* Path to your image */
     background-size: cover; /* Ensures the image covers the container */

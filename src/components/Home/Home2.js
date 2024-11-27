@@ -29,6 +29,7 @@ function Home2() {
     <Container fluid="true" className="home-about-section" id="about">
       <Container className="quote-card-view">
       <div className="image-container">
+        
       <div className="content">
   <h1>Comics</h1>
   <p>Pall-O is a groundbreaking sci-fi comic blending retro gaming vibes, 
@@ -39,6 +40,7 @@ function Home2() {
   </Button>
 </div>
 </div>
+
         <Row className="features-section">
   <Col md={4} className="feature-item">
     <img
@@ -91,7 +93,7 @@ function Home2() {
   The creators of Pall-O are two Finnish millennials, 
   trapped in economic chaos and constantly feeling like outsiders in life.
     </p>
-    <Button className= "buttonBig" variant="primary" href={"https://pall-o.com/about"} aria-label="read more about us" style={{marginTop:"10px"}}>
+    <Button className= "buttonBig" variant="primary" href={"https://pall-o.com/about"} aria-label="about us" style={{marginTop:"10px"}}>
     Read more
   </Button>
 </div>
