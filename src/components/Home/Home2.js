@@ -19,7 +19,7 @@ function Home2() {
   { question: "What happens if I lose my wallet and comic? ", answer: "Please take good care of your wallet and your comic. Remember to have backup keys to your wallet and always check the wallet address is correct when sending it.  Pall-O studio is not responsible if you lose your comic. " },
   {
     question: "Where can I see the trailer?", 
-    answer: 'Please check it <a style="color: #ffa600; text-decoration: none !important;" href="https://youtu.be/6tRs48gKywc?feature=shared" target="_blank" rel="noopener noreferrer">here</a> !'
+    answer: 'Please check it <a style="color: #ffa600; text-decoration: none !important;" href="https://youtu.be/6tRs48gKywc?feature=shared" target="_blank" arial-label="Watch Pall-O trailer on YouTube" rel="noopener noreferrer">here</a> !'
   },
   { question: "Why is Duckota angry?", answer: "If you were born as a vehicle, but hated that - and instead of having any purpose for your life, you would end up in Trash Bin node - do you think, you might also be a bit angry? " },
   { question: "Why is Plop so huge?", answer: "What do you mean, he’s only 17,3 GB? No, he truly is huge! He has a very powerful skill, but he’s also full of bugs." }
@@ -34,7 +34,7 @@ function Home2() {
   <p>Pall-O is a groundbreaking sci-fi comic blending retro gaming vibes, 
     unique characters, and an unforgettable adventure—now live on dReader app.
     </p>
-    <Button className= "buttonBig" variant="primary" href={"https://pall-o.com/comics"}>
+    <Button className= "buttonBig" variant="primary" href={"https://pall-o.com/comics"} aria-label="pall-o comics">
     Jump in!
   </Button>
 </div>
@@ -91,7 +91,7 @@ function Home2() {
   The creators of Pall-O are two Finnish millennials, 
   trapped in economic chaos and constantly feeling like outsiders in life.
     </p>
-    <Button className= "buttonBig" variant="primary" href={"https://pall-o.com/about"} style={{marginTop:"10px"}}>
+    <Button className= "buttonBig" variant="primary" href={"https://pall-o.com/about"} aria-label="read more about us" style={{marginTop:"10px"}}>
     Read more
   </Button>
 </div>
@@ -107,7 +107,7 @@ function Home2() {
           </Col>
           <Col 
           md={4} style={{ marginTop:"0px" }} className="about-img">
-          <img src={festival} alt="about" className="img-fluid"  style={{width:"250px", padding:0, loading:"lazy"}}/>
+          <img src={festival} alt="about" className="img-fluid" loading="lazy" style={{width:"250px", padding:0, loading:"lazy"}}/>
           </Col>
         </Row>
         <div className="faq-container" style={{ marginTop: "50px", padding: "20px", backgroundColor: "rgba(0,0,0,0)"}}>

@@ -24,6 +24,7 @@ function Footer() {
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
+                  aria-label="pall-o twitter/x page"
                 >
                   <AiOutlineTwitter />
                 </a>
@@ -34,6 +35,7 @@ function Footer() {
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
+                  aria-label="threat kreator's portfolio"
                 >
                   <AiFillInstagram />
                 </a>
@@ -44,6 +46,7 @@ function Footer() {
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
+                  aria-label="Pall-O YouTube channel"
                 >
                   <AiFillYoutube />
                 </a>
@@ -54,6 +57,7 @@ function Footer() {
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
+                  aria-label="read pall-o comics on dReader!"
                 >
                 <img
                   src={bunbun} // Render the image

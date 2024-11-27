@@ -44,7 +44,7 @@ function About() {
             Outcast who creates comics, games and art.
           </p>
             <Aboutcard />
-            <Button className="buttonBig"  variant="primary" href="https://threatkreator.com/" target="_blank">
+            <Button className="buttonBig"  variant="primary" href="https://threatkreator.com/" aria-label="threat kreator's portfolio" target="_blank">
           {"Portfolio"}
         </Button>
           </Col>

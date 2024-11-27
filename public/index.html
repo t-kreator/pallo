@@ -4,10 +4,17 @@
 <head>
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=no, minimal-ui">
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Pioneering digital comics experience." />
-
+  <link rel="preload" href="../src/Assets/banner.webp" as="image">
+  <link rel="preload" href="../src/styles.css" as="style">
+  <link rel="preload" href="https://fonts.gstatic.com/s/sairacondensed/v11/EJRLQgErUN8XuHNEtX81i9TmEkrnGc5Q962f.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="https://fonts.gstatic.com/s/sairacondensed/v11/EJROQgErUN8XuHNEtX81i9TmEkrvoutF.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="https://fonts.gstatic.com/s/tiltneon/v10//E21L_d7gguXdwD9LEFY2WCeElCNtd-eBqpHp1TzrkJSmwpj5ndxquUK6UOc.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Tilt+Neon&display=swap" rel="stylesheet">
+<link rel="preload" href="css/main.a47a0ed7.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/main.a47a0ed7.css"></noscript>
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <title>Pall-O</title>
   <meta name="description" content="Pioneering digital comics experience.">
@@ -29,11 +36,19 @@
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FWEJDWKRX"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  window.addEventListener('load', function() {
+        var gtmScript = document.createElement('script');
+        gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-3FWEJDWKRX';
+        gtmScript.async = true;
+        document.head.appendChild(gtmScript);
 
-  gtag('config', 'G-3FWEJDWKRX');
+        gtmScript.onload = function() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-3FWEJDWKRX');
+        };
+    });
 </script>
 
   </head>
