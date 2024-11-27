@@ -1,11 +1,11 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Home2 from "./Home2";
+const Home2 = lazy(() => import("./Home2"));
 
 function Home() {
   return (
     <section>
-      <Container fluid="true" className="home-section" id="home">
+      <Container fluid className="home-section" id="home">
         <Container className="home-content">
           <Row>
             <Col  className="home-header">
@@ -22,7 +22,10 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Home2 />
+            {/* Lazy load the Home2 component */}
+            <Suspense fallback={<div>Loading...</div>}>
+            <Home2 />
+            </Suspense>
     </section>
   );
 }
