@@ -6,6 +6,7 @@ import {
   AiFillYoutube,
 } from "react-icons/ai";
 import bunbun from "./../dreadericon.png";
+import { SiTiktok } from "react-icons/si";
 
 function Footer() {
   let date = new Date();
@@ -27,6 +28,17 @@ function Footer() {
                   aria-label="pall-o twitter/x page"
                 >
                   <AiOutlineTwitter />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.tiktok.com/@pallocomics"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                  aria-label="pall-o tiktok chaos"
+                >
+                  <SiTiktok />
                 </a>
               </li>
               <li className="social-icons">
