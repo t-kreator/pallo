@@ -957,4 +957,5 @@
 width: 150px;
 padding: 0;
 margin-bottom: 20px;
+pointer-events: none;
 }
