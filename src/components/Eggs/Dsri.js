@@ -1,5 +1,6 @@
 import React from "react";
 import { Container} from "react-bootstrap";
+import dsri from "../../Assets/DSRI.webp";
 
 
 function Dsri() {
@@ -7,6 +8,12 @@ function Dsri() {
     <Container>
     <Container className="dsri">
           <p style={{ fontSize: "40px", fontWeight: "bold" }}>DSRI</p>
+          <img
+      src={dsri}
+      className="dsrilogo"
+      loading= "lazy"
+      alt="DSRI logo"
+    />
           <p>
             Digital Species Research Institution
             <br />

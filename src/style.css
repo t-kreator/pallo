@@ -952,3 +952,9 @@
   text-align: justify; /* Justify text */
   color: #333; /* Slightly darker text for readability */
 }
+
+.dsrilogo{
+width: 150px;
+padding: 0;
+margin-bottom: 20px;
+}
