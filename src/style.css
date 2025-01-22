@@ -940,3 +940,15 @@
     font-size: 1.2rem; /* Adjust for larger screens */
   }
 }
+
+.dsri{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-family: 'Roboto Mono', monospace; 
+  font-size: 13px; /* 13px = 0.875rem (relative to root font size) */
+  line-height: 1.6; /* Improve readability with proper line spacing */
+  max-width: 800px; /* Limits content width for better readability */
+  padding: 0 20%; /* Add padding for spacing on smaller screens */
+  text-align: justify; /* Justify text */
+  color: #333; /* Slightly darker text for readability */
+}

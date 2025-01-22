@@ -16,7 +16,7 @@ function Footer() {
         <Row>
           <Col md={12} className="home-about-social" style={{ marginTop:"0px" }} >
           <h3>Copyright © {year} Pall-O</h3>
-          <h4>Website by Pyromon</h4>
+          <h4>Website by Pyromon🔥</h4>
             <h1 style={{ fontSize: "1.3em"}}>FIND US ON</h1>
             <ul className="home-about-social-links">
               <li className="social-icons">

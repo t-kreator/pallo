@@ -66,6 +66,15 @@ function NavBar() {
                 Pall-O Comics
               </Nav.Link>
             </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/dsri"
+                onClick={() => updateExpanded(false)}
+              >
+                DSRI
+              </Nav.Link>
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>
