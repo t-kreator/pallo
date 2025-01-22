@@ -10,7 +10,7 @@ function Dsri() {
           <p>
             Digital Species Research Institution
             <br />
-            65° 4.93' N, 23° 53.07' E
+            65° 4' 35" N, 25° 9' 38.4" E
           </p>
           <p>
             We conduct research on digital species within computational systems.
