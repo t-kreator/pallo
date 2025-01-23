@@ -10,6 +10,7 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
+  useLocation
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
@@ -17,18 +18,20 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [load, upadateLoad] = useState(true);
+  const [load, updateLoad] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
+    updateLoad(true);
     const timer = setTimeout(() => {
-      upadateLoad(false);
+      updateLoad(false);
     }, 1200);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [location]);
 
   return (
-    <Router>
+    <>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
@@ -42,8 +45,14 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </Router>
+    </>
   );
 }
 
-export default App;
+const AppWrapper = () => (
+  <Router>
+    <App />
+  </Router>
+);
+
+export default AppWrapper;
