@@ -11,7 +11,6 @@ function Dsri() {
           <img
       src={dsri}
       className="dsrilogo"
-      loading= "lazy"
       alt="DSRI logo"
     />
           <p>

@@ -588,10 +588,11 @@
     border-radius: 25px;
   }
   .dreader{
-    width:18px;
+    width:17px;
     height: auto;
     padding-top: 0px;
     padding-bottom: 0px;
+    max-width: 20px;
   }
 
   /* comicreader
@@ -955,6 +956,7 @@
 
 .dsrilogo{
 width: 150px;
+max-width: 150px;
 padding: 0;
 margin-bottom: 20px;
 pointer-events: none;

@@ -5,7 +5,7 @@ import {
   AiFillInstagram,
   AiFillYoutube,
 } from "react-icons/ai";
-import bunbun from "./../dreadericon.png";
+import bunbun from "./../dreadericon.webp";
 import { SiTiktok } from "react-icons/si";
 
 function Footer() {

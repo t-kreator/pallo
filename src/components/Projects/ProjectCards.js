@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import './../../style.css';
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import bunbun from "./../../dreadericon.png";
+import bunbun from "./../../dreadericon.webp";
 import ComicReader from "./comics/ComicReader.js";
 import Carousel from "react-bootstrap/Carousel";  // Import the Carousel component
 
@@ -55,7 +55,6 @@ function ProjectCards(props) {
                     src={image} // Use images from modalImage array
                     alt={`Slide ${index + 1}`}
                     className="img-fluid mb-3"
-                    loading="lazy"
                     style={{ borderRadius: "8px", maxWidth: "100%" }}
                   />
                 </Carousel.Item>
@@ -80,7 +79,7 @@ function ProjectCards(props) {
 
           <div style={{ display: "flex", justifyContent: "center", width: "100%", marginBottom:"30px", marginTop:"20px" }}>
           <Button className="buttonBig" variant="primary" href={props.demoLink} target="_blank">
-    <img src={bunbun} className="dreader" alt="dreader" /> &nbsp;
+    <img src={bunbun} className="dreader" alt="dreader" loading="lazy" /> &nbsp;
     {props.button}
   </Button>
   </div>

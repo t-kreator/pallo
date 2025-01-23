@@ -162,6 +162,7 @@ const ComicReader = ({ pages }) => {
           src={pages[currentPage - 1]}
           alt={`Comic Page ${currentPage}`}
           onClick={toggleFullScreen}
+          loading="lazy"
           style={{
             cursor: "pointer",
             width: "auto",               // Maintain the original aspect ratio

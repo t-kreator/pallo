@@ -21,7 +21,7 @@ function Projects() {
             borderRadius: "none",
             height: "auto",
             width: "150px",
-            maxWidth: "500px"
+            maxWidth: "150px"
           }}
         />
         <h1 className="project-heading">
