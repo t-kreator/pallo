@@ -5,7 +5,7 @@ import bindeep from "../../Assets/Projects/issue2.webp";
 import bindeepleg from "../../Assets/Projects/bindeep_legendary.webp";
 import bindeeprare from "../../Assets/Projects/bindeep_rare.webp";
 import activation from "../../Assets/Projects/issue1.webp";
-import pallocomics from "../../Assets/logoball.png";
+import pallocomics from "../../Assets/logoball.webp";
 
 
 function Projects() {
@@ -21,19 +21,13 @@ function Projects() {
             borderRadius: "none",
             height: "auto",
             width: "150px",
+            maxWidth: "500px"
           }}
         />
         <h1 className="project-heading">
           Finland's first <strong className="purple">on-chain</strong> comic series.
         </h1>
-        <p
-          style={{
-            maxWidth: "600px",
-            margin: "auto",
-            fontSize: "1rem",
-            fontWeight: "700",
-          }}
-        >
+        <p>
           Experimental sci-fi adventure about life inside computers. O'Pall!
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
@@ -50,6 +44,7 @@ function Projects() {
     pages="57"
     year="2024"
     button="Get the comic"
+    contract="EQ2zqNT56HyibwKSFhwP9wRhzHyZLwpgiuRUAiq3ovt7"
     description={
       <>
         {"To escape, Plop has to find a way through Trash Bin node. Unfortunately, The Bin is a home for all kinds of creepwares."}
@@ -93,6 +88,7 @@ function Projects() {
             maxWidth: "600px",
             margin: "auto",
             fontSize: "0.88em",
+            fontWeight: "500"
           }}
         >
           Thanks to blockchain technology, digital comics can now be treated almost like physical ones. When you purchase our comic, you gain the freedom to choose: will you unwrap it, resell it, or request our signature? Finally, digital comics are truly collectible.

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
+import './../../style.css';
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import bunbun from "./../../dreadericon.png";
@@ -36,22 +37,9 @@ function ProjectCards(props) {
           <Modal.Title style={{ color: "#fff" }}>{props.titlelong}</Modal.Title>
           <button 
             type="button" 
-            className="btn-close" 
+            className="closebt" 
             aria-label="Close" 
             onClick={handleClose}
-            style={{
-              position: "absolute",
-              top: "15px",
-              right: "15px",
-              zIndex: 1050,
-              backgroundColor: "rgb(253, 166, 15)",
-              border: "none",
-              width: "30px",
-              height: "30px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
           >
             ✕
           </button>
@@ -67,6 +55,7 @@ function ProjectCards(props) {
                     src={image} // Use images from modalImage array
                     alt={`Slide ${index + 1}`}
                     className="img-fluid mb-3"
+                    loading="lazy"
                     style={{ borderRadius: "8px", maxWidth: "100%" }}
                   />
                 </Carousel.Item>
@@ -78,13 +67,15 @@ function ProjectCards(props) {
               src={props.modalImage || props.imgPath} 
               alt={props.title} 
               className="img-fluid mb-3"
+              loading="lazy"
               style={{ borderRadius: "8px", maxWidth: "100%" }} 
             />
           )}
-<div style={{ maxWidth: "600px", margin: "auto" }}>
+<div style={{ maxWidth: "600px", margin: "auto", overflowX:"auto" }}>
   <p style={{ margin: "5px 0 2px 0" }}><strong></strong> {props.description}</p>
   <p style={{ margin: "10px 0 2px 0" }}><strong>Pages:</strong> {props.pages}</p>
   <p style={{ margin: "5px 0" }}><strong>Year:</strong> {props.year}</p>
+  <p style={{ margin: "5px 0" }}><strong>Contract:</strong> {props.contract}</p>
 </div>
 
           <div style={{ display: "flex", justifyContent: "center", width: "100%", marginBottom:"30px", marginTop:"20px" }}>

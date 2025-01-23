@@ -959,3 +959,34 @@ padding: 0;
 margin-bottom: 20px;
 pointer-events: none;
 }
+
+.project-section p{
+  max-width: 600px;
+  margin: auto;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.closebt{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1050;
+  background-color: rgb(253, 166, 15);
+  border: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* Indicates the element is clickable */
+  box-sizing: border-box;
+  border-radius: 50%; /* Makes the button circular */
+  font-size: 1.2rem; /* Increases the size of the icon */
+  color: #fff; /* Sets the icon color to white */
+  transition: background-color 0.3s ease; /* Adds a transition effect */
+}
+
+.closebt:hover {
+  background-color: rgb(200, 130, 10); /* Changes color on hover */
+}
